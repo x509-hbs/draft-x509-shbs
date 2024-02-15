@@ -6,14 +6,14 @@ category: info
 docname: draft-gazdag-x509-shbs-latest
 submissiontype: IETF
 v: 3
-area: sec
-workgroup: LAMPS - Limited Additional Mechanisms for PKIX and SMIME
+# area: sec
+# workgroup: LAMPS - Limited Additional Mechanisms for PKIX and SMIME
 keyword: Internet-Draft
 venue:
-  group: LAMPS
-  type: Working Group
-  mail: spasm@ietf.org
-  github: x509-hbs/draft-x509-shbs
+#  group: LAMPS
+#  type: Working Group
+#  mail: spasm@ietf.org
+  github: "x509-hbs/draft-x509-shbs"
 
 author:
 -
