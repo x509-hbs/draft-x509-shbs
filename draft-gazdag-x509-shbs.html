@@ -1273,6 +1273,8 @@ is typically aligned to the standard output length of the hash function in use,
 i.e. either 24, 32 or 64 bytes. The height of a single tree is typically given
 by the parameter 'h'. The number of levels of trees is either called 'L' (HSS)
 or 'd' (XMSS, XMSS^MT).<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-2">[EDNOTE: Should we delete this section? The parameters are not used in this
+document.]<a href="#section-3-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="use-cases-shbs-x509">
@@ -1360,7 +1362,7 @@ HSS-LMS-HashSig-PublicKey ::= OCTET STRING
 </div>
 <p id="section-5.1-9">See <span>[<a href="#SP800208" class="cite xref">SP800208</a>]</span> and <span>[<a href="#RFC8554" class="cite xref">RFC8554</a>]</span> for more information on the contents and
 format of an HSS public key. Note that the single-tree signature scheme LMS is
-instantiated as HSS with level L=1.<a href="#section-5.1-9" class="pilcrow">¶</a></p>
+instantiated as HSS with number of levels being equal to 1.<a href="#section-5.1-9" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="xmss-public-keys">
