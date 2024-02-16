@@ -145,6 +145,9 @@ i.e. either 24, 32 or 64 bytes. The height of a single tree is typically given
 by the parameter 'h'. The number of levels of trees is either called 'L' (HSS)
 or 'd' (XMSS, XMSS^MT).
 
+[EDNOTE: Should we delete this section? The parameters are not used in this
+document.]
+
 # Use Cases of S-HBS in X.509 {#use-cases-shbs-x509}
 
 As many cryptographic algorithms that are considered to be quantum-resistant,
@@ -221,7 +224,7 @@ The HSS public key is defined as follows:
 
 See [SP800208] and [RFC8554] for more information on the contents and
 format of an HSS public key. Note that the single-tree signature scheme LMS is
-instantiated as HSS with level L=1.
+instantiated as HSS with number of levels being equal to 1.
 
 ##  XMSS Public Keys
 
