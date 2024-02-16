@@ -22,7 +22,7 @@ Internet X.509 Public Key Infrastructure: Algorithm Identifiers for HSS
 Abstract
 
    This document specifies algorithm identifiers and ASN.1 encoding
-   formats for the Stateful Hash-Based Signature (S-HBS) schemes
+   formats for the Stateful Hash-Based Signature Schemes (S-HBS)
    Hierarchical Signature System (HSS), eXtended Merkle Signature Scheme
    (XMSS), and XMSS^MT, a multi-tree variant of XMSS.  This
    specification applies to the Internet X.509 Public Key infrastructure
@@ -98,7 +98,7 @@ Table of Contents
 
 1.  Introduction
 
-   The Stateful Hash-Based Signature (S-HBS) schemes HSS, XMSS and
+   Stateful Hash-Based Signature Schemes (S-HBS) such as HSS, XMSS and
    XMSS^MT combine Merkle trees with One Time Signatures (OTS) in order
    to provide digital signature schemes that remain secure even when
    quantum computers become available.  Their theoretic security is well
@@ -275,25 +275,29 @@ Table of Contents
 6.  Key Usage Bits
 
    The intended application for the key is indicated in the keyUsage
-   certificate extension [RFC5280].
+   certificate extension [RFC5280].  If the keyUsage extension is
+   present in a certificate that indicates id-alg-hss-lms-hashsig, id-
+   alg-xmss-hashsig, or id-alg-xmssmt-hashsig, then the following
+   requirements given in this section MUST be fulfilled.
 
-   If the keyUsage extension is present in a code signing certificate
-   that indicates id-alg-hss-lms-hashsig, id-alg-xmss-hashsig, or id-
-   alg-xmssmt-hashsig, then it MUST contain at least one of the
-   following values:
+   If the keyUsage extension is present in a code signing certificate,
+   then it MUST contain at least one of the following values:
 
    nonRepudiation; or
    digitalSignature.
 
+   However, it MUST NOT contain other values.
+
    If the keyUsage extension is present in a certification authority
-   certificate that indicates id-alg-hss-lms-hashsig, id-alg-xmss-
-   hashsig, or id-alg-xmssmt-hashsig, then it MUST contain at least one
-   of the following values:
+   certificate, then it MUST contain at least one of the following
+   values:
 
    nonRepudiation; or
    digitalSignature; or
    keyCertSign; or
    cRLSign.
+
+   However, it MUST NOT contain other values.
 
    Note that for certificates that indicate id-alg-hss-lms-hashsig the
    above definitions are more restrictive than the requirement defined
@@ -311,13 +315,16 @@ Table of Contents
    The data to be signed is prepared for signing.  For the algorithms
    used in this document, the data is signed directly by the signature
    algorithm, the data is not hashed before processing.  Then, a private
-   key operation is performed to generate the signature value.  For HSS,
-   the signature value is described in section 6.4 of [RFC8554].  For
-   XMSS and XMSS^MT the signature values are described in sections B.2
-   and C.2 of [RFC8391], respectively.  The octet string representing
-   the signature is encoded directly in the OCTET STRING without adding
-   any additional ASN.1 wrapping.  For the Certificate and
-   CertificateList structures, the signature value is wrapped in the
+   key operation is performed to generate the signature value.
+
+   [EDNOTE: Should we delete the preceding paragraph?]
+
+   For HSS, the signature value is described in section 6.4 of
+   [RFC8554].  For XMSS and XMSS^MT the signature values are described
+   in sections B.2 and C.2 of [RFC8391], respectively.  The octet string
+   representing the signature is encoded directly in the OCTET STRING
+   without adding any additional ASN.1 wrapping.  For the Certificate
+   and CertificateList structures, the signature value is wrapped in the
    "signatureValue" OCTET STRING field.
 
 7.1.  HSS Signature Algorithm
