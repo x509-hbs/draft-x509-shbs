@@ -104,7 +104,7 @@ informative:
 --- abstract
 
 This document specifies algorithm identifiers and ASN.1 encoding formats for
-the Stateful Hash-Based Signature (S-HBS) schemes Hierarchical Signature System
+the Stateful Hash-Based Signature  Schemes (S-HBS) Hierarchical Signature System
 (HSS), eXtended Merkle Signature Scheme (XMSS), and XMSS^MT, a multi-tree
 variant of XMSS. This specification applies to the Internet X.509 Public Key
 infrastructure (PKI) when those digital signatures are used in Internet X.509
@@ -114,7 +114,7 @@ certificates and certificate revocation lists.
 
 # Introduction
 
-The Stateful Hash-Based Signature (S-HBS) schemes HSS, XMSS and XMSS^MT combine
+Stateful Hash-Based Signature Schemes (S-HBS) such as HSS, XMSS and XMSS^MT combine
 Merkle trees with One Time Signatures (OTS) in order to provide digital
 signature schemes that remain secure even when quantum computers become
 available. Their theoretic security is well understood and depends only on the
@@ -276,25 +276,30 @@ format of an XMSS^MT public key.
 # Key Usage Bits
 
 The intended application for the key is indicated in the keyUsage certificate
-extension [RFC5280].
-
-If the keyUsage extension is present in a code signing certificate that
+extension [RFC5280]. If the keyUsage extension is present in a certificate that
 indicates `id-alg-hss-lms-hashsig`, `id-alg-xmss-hashsig`, or
-`id-alg-xmssmt-hashsig`, then it MUST contain at least one of the following
+`id-alg-xmssmt-hashsig`, then the following requirements given in this section
+MUST be fulfilled.
+
+If the keyUsage extension is present in a code signing certificate, then
+it MUST contain at least one of the following
 values:
 
     nonRepudiation; or
     digitalSignature.
 
-If the keyUsage extension is present in a certification authority certificate
-that indicates `id-alg-hss-lms-hashsig`, `id-alg-xmss-hashsig`, or
-`id-alg-xmssmt-hashsig`, then it MUST contain at least one of the following
+However, it MUST NOT contain other values.
+
+If the keyUsage extension is present in a certification authority certificate, then
+it MUST contain at least one of the following
 values:
 
     nonRepudiation; or
     digitalSignature; or
     keyCertSign; or
     cRLSign.
+
+However, it MUST NOT contain other values.
 
 Note that for certificates that indicate `id-alg-hss-lms-hashsig` the above
 definitions are more restrictive than the requirement defined in Section 4 of
@@ -311,7 +316,11 @@ defined in the following subsections.
 The data to be signed is prepared for signing. For the algorithms used in this
 document, the data is signed directly by the signature algorithm, the data is
 not hashed before processing. Then, a private key operation is performed to
-generate the signature value. For HSS, the signature value is described in
+generate the signature value.
+
+[EDNOTE: Should we delete the preceding paragraph?]
+
+For HSS, the signature value is described in
 section 6.4 of [RFC8554]. For XMSS and XMSS^MT the signature values are
 described in sections B.2 and C.2 of [RFC8391], respectively. The octet string
 representing the signature is encoded directly in the OCTET STRING without
