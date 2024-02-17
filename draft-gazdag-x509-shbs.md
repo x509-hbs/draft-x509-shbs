@@ -104,7 +104,7 @@ informative:
 --- abstract
 
 This document specifies algorithm identifiers and ASN.1 encoding formats for
-the Stateful Hash-Based Signature  Schemes (S-HBS) Hierarchical Signature System
+the Stateful Hash-Based Signature Schemes (S-HBS) Hierarchical Signature System
 (HSS), eXtended Merkle Signature Scheme (XMSS), and XMSS^MT, a multi-tree
 variant of XMSS. This specification applies to the Internet X.509 Public Key
 infrastructure (PKI) when those digital signatures are used in Internet X.509
@@ -114,8 +114,8 @@ certificates and certificate revocation lists.
 
 # Introduction
 
-Stateful Hash-Based Signature Schemes (S-HBS) such as HSS, XMSS and XMSS^MT combine
-Merkle trees with One Time Signatures (OTS) in order to provide digital
+Stateful Hash-Based Signature Schemes (S-HBS) such as HSS, XMSS and XMSS^MT
+combine Merkle trees with One Time Signatures (OTS) in order to provide digital
 signature schemes that remain secure even when quantum computers become
 available. Their theoretic security is well understood and depends only on the
 security of the underlying hash function. As such they can serve as an
@@ -145,8 +145,8 @@ i.e. either 24, 32 or 64 bytes. The height of a single tree is typically given
 by the parameter 'h'. The number of levels of trees is either called 'L' (HSS)
 or 'd' (XMSS, XMSS^MT).
 
-[EDNOTE: Should we delete this section? The parameters are not used in this
-document.]
+\[EDNOTE: Should we delete this section? The parameters are not used in this
+document.\]
 
 # Use Cases of S-HBS in X.509 {#use-cases-shbs-x509}
 
@@ -162,8 +162,8 @@ than classical alternatives, fast and minimal verification routines can be
 built.  The major negative aspect is the statefulness.  Private keys always
 have to be handled in a secure manner, S-HBS necessitate a special treatment of
 the private key in order to avoid security incidents like signature forgery
-[MCGREW], [SP800208]. Therefore, for S-HBS, a secure environment MUST be
-used for key generation and key management.
+[MCGREW], [SP800208]. Therefore, for S-HBS, a secure environment MUST be used
+for key generation and key management.
 
 Note that, in general, root CAs offer such a secure environment and the number
 of issued signatures (including signed certificates and CRLs) is often moderate
@@ -284,18 +284,16 @@ indicates `id-alg-hss-lms-hashsig`, `id-alg-xmss-hashsig`, or
 `id-alg-xmssmt-hashsig`, then the following requirements given in this section
 MUST be fulfilled.
 
-If the keyUsage extension is present in a code signing certificate, then
-it MUST contain at least one of the following
-values:
+If the keyUsage extension is present in a code signing certificate, then it
+MUST contain at least one of the following values:
 
     nonRepudiation; or
     digitalSignature.
 
 However, it MUST NOT contain other values.
 
-If the keyUsage extension is present in a certification authority certificate, then
-it MUST contain at least one of the following
-values:
+If the keyUsage extension is present in a certification authority certificate,
+then it MUST contain at least one of the following values:
 
     nonRepudiation; or
     digitalSignature; or
@@ -321,15 +319,14 @@ document, the data is signed directly by the signature algorithm, the data is
 not hashed before processing. Then, a private key operation is performed to
 generate the signature value.
 
-[EDNOTE: Should we delete the preceding paragraph?]
+\[EDNOTE: Should we delete the preceding paragraph?\]
 
-For HSS, the signature value is described in
-section 6.4 of [RFC8554]. For XMSS and XMSS^MT the signature values are
-described in sections B.2 and C.2 of [RFC8391], respectively. The octet string
-representing the signature is encoded directly in the OCTET STRING without
-adding any additional ASN.1 wrapping. For the Certificate and CertificateList
-structures, the signature value is wrapped in the "signatureValue" OCTET STRING
-field.
+For HSS, the signature value is described in section 6.4 of [RFC8554]. For XMSS
+and XMSS^MT the signature values are described in sections B.2 and C.2 of
+[RFC8391], respectively. The octet string representing the signature is encoded
+directly in the OCTET STRING without adding any additional ASN.1 wrapping. For
+the Certificate and CertificateList structures, the signature value is wrapped
+in the "signatureValue" OCTET STRING field.
 
 ## HSS Signature Algorithm
 
@@ -416,7 +413,7 @@ This ASN.1 Module builds upon the conventions established in [RFC5911].
       PUBLIC-KEY, SIGNATURE-ALGORITHM
       FROM AlgorithmInformation-2009
         {iso(1) identified-organization(3) dod(6) internet(1) security(5)
-        mechanisms(5) pkix(7) id-mod(0) id-mod-algorithmInformation-02(58)} ;
+        mechanisms(5) pkix(7) id-mod(0) id-mod-algorithmInformation-02(58)};
 
     --
     -- Object Identifiers
