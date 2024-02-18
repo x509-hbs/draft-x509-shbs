@@ -1,0 +1,149 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2024-02-18T01:15:40.323095+00:00",
+  "repo": "x509-hbs/draft-x509-shbs",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOLS-xBM5nAUe9",
+      "title": "Focused text on HSS and XMSS, removed SLH-DSA",
+      "url": "https://github.com/x509-hbs/draft-x509-shbs/pull/1",
+      "state": "MERGED",
+      "author": "fluppe2",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-02-15T17:16:38Z",
+      "updatedAt": "2024-02-16T10:19:34Z",
+      "baseRepository": "x509-hbs/draft-x509-shbs",
+      "baseRefName": "main",
+      "baseRefOid": "1669e431a03e1af50c79de64bccacb72f369cf9b",
+      "headRepository": "x509-hbs/draft-x509-shbs",
+      "headRefName": "concentrate-on-hss-xmss",
+      "headRefOid": "53a31e05f966d0e330059cbbd782f9021eaa3e13",
+      "closedAt": "2024-02-16T10:19:34Z",
+      "mergedAt": "2024-02-16T10:19:34Z",
+      "mergedBy": "BashiriK",
+      "mergeCommit": {
+        "oid": "42ccd8d21a658ff3fe43974a4201c6a88cbfab62"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOLS-xBM5wVjp4",
+          "commit": {
+            "abbreviatedOid": "53a31e0"
+          },
+          "author": "BashiriK",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-02-16T09:47:18Z",
+          "updatedAt": "2024-02-16T09:47:19Z",
+          "comments": [
+            {
+              "originalPosition": 64,
+              "body": "Reading this implies that S-HBS = Stateful Hash-Based Signature. However, I would suggest to define \r\nS-HBS = Stateful Hash-Based Signature schemes\r\n",
+              "createdAt": "2024-02-16T09:47:18Z",
+              "updatedAt": "2024-02-16T09:47:19Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLS-xBM5wVoEi",
+          "commit": {
+            "abbreviatedOid": "53a31e0"
+          },
+          "author": "BashiriK",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-02-16T09:57:13Z",
+          "updatedAt": "2024-02-16T10:00:07Z",
+          "comments": [
+            {
+              "originalPosition": 496,
+              "body": "Here is a good point where we can reference the new draft on state and backup management for S-HBS\r\n",
+              "createdAt": "2024-02-16T09:58:19Z",
+              "updatedAt": "2024-02-16T10:00:07Z"
+            },
+            {
+              "originalPosition": 474,
+              "body": "Here is a good point where we can reference the new draft on state and backup management for S-HBS",
+              "createdAt": "2024-02-16T09:58:45Z",
+              "updatedAt": "2024-02-16T10:00:07Z"
+            },
+            {
+              "originalPosition": 157,
+              "body": "I was thinking about the fact that we use here \"hash-based signature algorithms\" whereas we use S-HBS everywhere else. But I think that this is okay here due to the context. ",
+              "createdAt": "2024-02-16T10:00:02Z",
+              "updatedAt": "2024-02-16T10:00:07Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOLS-xBM5wVxl0",
+          "commit": {
+            "abbreviatedOid": "53a31e0"
+          },
+          "author": "BashiriK",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-02-16T10:19:25Z",
+          "updatedAt": "2024-02-16T10:19:25Z",
+          "comments": []
+        }
+      ]
+    }
+  ]
+}
