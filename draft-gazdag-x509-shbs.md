@@ -34,7 +34,7 @@ author:
 -
     ins: D. Van Geest
     name: Daniel Van Geest
-    org:
+    org: CryptoNext Security
     email: daniel.vangeest.ietf@gmail.com
 -
     ins: S. Kousidis
