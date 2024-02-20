@@ -5,14 +5,14 @@
 Network Working Group                                         K. Bashiri
 Internet-Draft                                                       BSI
 Intended status: Informational                                S. Fluhrer
-Expires: 20 August 2024                                    Cisco Systems
+Expires: 23 August 2024                                    Cisco Systems
                                                                S. Gazdag
                                                               genua GmbH
                                                             D. Van Geest
-                                                                        
+                                                     CryptoNext Security
                                                              S. Kousidis
                                                                      BSI
-                                                        17 February 2024
+                                                        20 February 2024
 
 
 Internet X.509 Public Key Infrastructure: Algorithm Identifiers for HSS
@@ -54,7 +54,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 20 August 2024.
+   This Internet-Draft will expire on 23 August 2024.
 
 Copyright Notice
 
@@ -660,6 +660,7 @@ Authors' Addresses
 
 
    Daniel Van Geest
+   CryptoNext Security
    Email: daniel.vangeest.ietf@gmail.com
 
 
