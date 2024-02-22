@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-02-20T01:10:23.445351+00:00",
+  "timestamp": "2024-02-22T01:11:07.526304+00:00",
   "repo": "x509-hbs/draft-x509-shbs",
   "labels": [
     {
@@ -63,6 +63,22 @@
       "body": "In Chapter 5 we write: \r\n\t\"CERT-KEY-USAGE\r\n      { digitalSignature, nonRepudiation, keyCertSign, cRLSign }\"\r\nWhile in Chapter 6 (\"key usage bits\") we restrict the choices for this field. \r\n",
       "createdAt": "2024-02-19T08:47:09Z",
       "updatedAt": "2024-02-19T08:47:09Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 4,
+      "id": "I_kwDOLS-xBM5_y19E",
+      "title": "Delete two paragraphs which are mentioned as \"EDNOTE\"s",
+      "url": "https://github.com/x509-hbs/draft-x509-shbs/issues/4",
+      "state": "OPEN",
+      "author": "BashiriK",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-02-20T10:21:29Z",
+      "updatedAt": "2024-02-20T10:21:29Z",
       "closedAt": null,
       "comments": []
     }
@@ -167,26 +183,42 @@
       "id": "PR_kwDOLS-xBM5nTCdP",
       "title": "Update affiliation",
       "url": "https://github.com/x509-hbs/draft-x509-shbs/pull/3",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "danvangeest",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-02-19T14:46:59Z",
-      "updatedAt": "2024-02-19T14:46:59Z",
+      "updatedAt": "2024-02-20T10:21:50Z",
       "baseRepository": "x509-hbs/draft-x509-shbs",
       "baseRefName": "main",
       "baseRefOid": "d5dd9e1945bed360490b19eb8aac65a55d7cfd1e",
       "headRepository": "x509-hbs/draft-x509-shbs",
       "headRefName": "dvg/update_affiliation",
       "headRefOid": "6f8325e1fe7e3bf336f18e99441e208d2c4a262f",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-02-20T10:21:50Z",
+      "mergedAt": "2024-02-20T10:21:49Z",
+      "mergedBy": "BashiriK",
+      "mergeCommit": {
+        "oid": "4f4ee4d0c1acc93dee6aa57081435258af0fc104"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOLS-xBM5wp_sa",
+          "commit": {
+            "abbreviatedOid": "6f8325e"
+          },
+          "author": "BashiriK",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-02-20T10:21:43Z",
+          "updatedAt": "2024-02-20T10:21:43Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
