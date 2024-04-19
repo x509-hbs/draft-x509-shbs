@@ -2,27 +2,27 @@
 
 
 
-Network Working Group                                         K. Bashiri
+LAMPS - Limited Additional Mechanisms for PKIX and SMIME      K. Bashiri
 Internet-Draft                                                       BSI
-Intended status: Informational                                S. Fluhrer
-Expires: 18 August 2024                                    Cisco Systems
+Intended status: Standards Track                              S. Fluhrer
+Expires: 21 October 2024                                   Cisco Systems
                                                                S. Gazdag
                                                               genua GmbH
                                                             D. Van Geest
-                                                                        
+                                                     CryptoNext Security
                                                              S. Kousidis
                                                                      BSI
-                                                        15 February 2024
+                                                           19 April 2024
 
 
 Internet X.509 Public Key Infrastructure: Algorithm Identifiers for HSS
                                 and XMSS
-                     draft-gazdag-x509-shbs-latest
+                      draft-ietf-x509-shbs-latest
 
 Abstract
 
    This document specifies algorithm identifiers and ASN.1 encoding
-   formats for the Stateful Hash-Based Signature (S-HBS) schemes
+   formats for the Stateful Hash-Based Signature Schemes (S-HBS)
    Hierarchical Signature System (HSS), eXtended Merkle Signature Scheme
    (XMSS), and XMSS^MT, a multi-tree variant of XMSS.  This
    specification applies to the Internet X.509 Public Key infrastructure
@@ -34,7 +34,12 @@ About This Document
    This note is to be removed before publishing as an RFC.
 
    Status information for this document may be found at
-   https://datatracker.ietf.org/doc/draft-gazdag-x509-shbs/.
+   https://datatracker.ietf.org/doc/draft-ietf-x509-shbs/.
+
+   Discussion of this document takes place on the LAMPS Working Group
+   mailing list (mailto:spasm@ietf.org), which is archived at
+   https://mailarchive.ietf.org/arch/browse/spasm/.  Subscribe at
+   https://www.ietf.org/mailman/listinfo/spasm/.
 
    Source for this draft and an issue tracker can be found at
    https://github.com/x509-hbs/draft-x509-shbs.
@@ -54,7 +59,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 18 August 2024.
+   This Internet-Draft will expire on 21 October 2024.
 
 Copyright Notice
 
@@ -98,7 +103,7 @@ Table of Contents
 
 1.  Introduction
 
-   The Stateful Hash-Based Signature (S-HBS) schemes HSS, XMSS and
+   Stateful Hash-Based Signature Schemes (S-HBS) such as HSS, XMSS and
    XMSS^MT combine Merkle trees with One Time Signatures (OTS) in order
    to provide digital signature schemes that remain secure even when
    quantum computers become available.  Their theoretic security is well
@@ -133,6 +138,9 @@ Table of Contents
    the hash function in use, i.e. either 24, 32 or 64 bytes.  The height
    of a single tree is typically given by the parameter 'h'.  The number
    of levels of trees is either called 'L' (HSS) or 'd' (XMSS, XMSS^MT).
+
+   [EDNOTE: Should we delete this section?  The parameters are not used
+   in this document.]
 
 4.  Use Cases of S-HBS in X.509
 
@@ -219,7 +227,8 @@ Table of Contents
 
    See [SP800208] and [RFC8554] for more information on the contents and
    format of an HSS public key.  Note that the single-tree signature
-   scheme LMS is instantiated as HSS with level L=1.
+   scheme LMS is instantiated as HSS with number of levels being equal
+   to 1.
 
 5.2.  XMSS Public Keys
 
@@ -275,25 +284,29 @@ Table of Contents
 6.  Key Usage Bits
 
    The intended application for the key is indicated in the keyUsage
-   certificate extension [RFC5280].
+   certificate extension [RFC5280].  If the keyUsage extension is
+   present in a certificate that indicates id-alg-hss-lms-hashsig, id-
+   alg-xmss-hashsig, or id-alg-xmssmt-hashsig, then the following
+   requirements given in this section MUST be fulfilled.
 
-   If the keyUsage extension is present in a code signing certificate
-   that indicates id-alg-hss-lms-hashsig, id-alg-xmss-hashsig, or id-
-   alg-xmssmt-hashsig, then it MUST contain at least one of the
-   following values:
+   If the keyUsage extension is present in a code signing certificate,
+   then it MUST contain at least one of the following values:
 
    nonRepudiation; or
    digitalSignature.
 
+   However, it MUST NOT contain other values.
+
    If the keyUsage extension is present in a certification authority
-   certificate that indicates id-alg-hss-lms-hashsig, id-alg-xmss-
-   hashsig, or id-alg-xmssmt-hashsig, then it MUST contain at least one
-   of the following values:
+   certificate, then it MUST contain at least one of the following
+   values:
 
    nonRepudiation; or
    digitalSignature; or
    keyCertSign; or
    cRLSign.
+
+   However, it MUST NOT contain other values.
 
    Note that for certificates that indicate id-alg-hss-lms-hashsig the
    above definitions are more restrictive than the requirement defined
@@ -311,13 +324,16 @@ Table of Contents
    The data to be signed is prepared for signing.  For the algorithms
    used in this document, the data is signed directly by the signature
    algorithm, the data is not hashed before processing.  Then, a private
-   key operation is performed to generate the signature value.  For HSS,
-   the signature value is described in section 6.4 of [RFC8554].  For
-   XMSS and XMSS^MT the signature values are described in sections B.2
-   and C.2 of [RFC8391], respectively.  The octet string representing
-   the signature is encoded directly in the OCTET STRING without adding
-   any additional ASN.1 wrapping.  For the Certificate and
-   CertificateList structures, the signature value is wrapped in the
+   key operation is performed to generate the signature value.
+
+   [EDNOTE: Should we delete the preceding paragraph?]
+
+   For HSS, the signature value is described in section 6.4 of
+   [RFC8554].  For XMSS and XMSS^MT the signature values are described
+   in sections B.2 and C.2 of [RFC8391], respectively.  The octet string
+   representing the signature is encoded directly in the OCTET STRING
+   without adding any additional ASN.1 wrapping.  For the Certificate
+   and CertificateList structures, the signature value is wrapped in the
    "signatureValue" OCTET STRING field.
 
 7.1.  HSS Signature Algorithm
@@ -406,7 +422,7 @@ IMPORTS
   PUBLIC-KEY, SIGNATURE-ALGORITHM
   FROM AlgorithmInformation-2009
     {iso(1) identified-organization(3) dod(6) internet(1) security(5)
-    mechanisms(5) pkix(7) id-mod(0) id-mod-algorithmInformation-02(58)} ;
+    mechanisms(5) pkix(7) id-mod(0) id-mod-algorithmInformation-02(58)};
 
 --
 -- Object Identifiers
@@ -649,7 +665,8 @@ Authors' Addresses
 
 
    Daniel Van Geest
-   Email: daniel.vangeest.ietf@gmail.com
+   CryptoNext Security
+   Email: daniel.vangeest@cryptonext-security.com
 
 
    Stavros Kousidis
