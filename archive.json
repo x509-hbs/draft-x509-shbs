@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-04-18T01:13:00.720629+00:00",
+  "timestamp": "2024-04-21T01:19:00.767608+00:00",
   "repo": "x509-hbs/draft-x509-shbs",
   "labels": [
     {
@@ -219,6 +219,32 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 5,
+      "id": "PR_kwDOLS-xBM5tKa9V",
+      "title": "Rename to draft-ietf-x509-shbs",
+      "url": "https://github.com/x509-hbs/draft-x509-shbs/pull/5",
+      "state": "OPEN",
+      "author": "danvangeest",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-04-19T12:05:40Z",
+      "updatedAt": "2024-04-19T12:05:40Z",
+      "baseRepository": "x509-hbs/draft-x509-shbs",
+      "baseRefName": "main",
+      "baseRefOid": "4f4ee4d0c1acc93dee6aa57081435258af0fc104",
+      "headRepository": "x509-hbs/draft-x509-shbs",
+      "headRefName": "dvg/rename",
+      "headRefOid": "54862cd7a5f4de27416f7ea0c7d7fecf89748897",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
