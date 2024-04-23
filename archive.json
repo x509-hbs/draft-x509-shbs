@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-04-21T01:19:00.767608+00:00",
+  "timestamp": "2024-04-23T01:14:45.868063+00:00",
   "repo": "x509-hbs/draft-x509-shbs",
   "labels": [
     {
@@ -225,26 +225,42 @@
       "id": "PR_kwDOLS-xBM5tKa9V",
       "title": "Rename to draft-ietf-x509-shbs",
       "url": "https://github.com/x509-hbs/draft-x509-shbs/pull/5",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "danvangeest",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-04-19T12:05:40Z",
-      "updatedAt": "2024-04-19T12:05:40Z",
+      "updatedAt": "2024-04-22T11:04:44Z",
       "baseRepository": "x509-hbs/draft-x509-shbs",
       "baseRefName": "main",
       "baseRefOid": "4f4ee4d0c1acc93dee6aa57081435258af0fc104",
       "headRepository": "x509-hbs/draft-x509-shbs",
       "headRefName": "dvg/rename",
       "headRefOid": "54862cd7a5f4de27416f7ea0c7d7fecf89748897",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-04-22T11:04:43Z",
+      "mergedAt": "2024-04-22T11:04:43Z",
+      "mergedBy": "BashiriK",
+      "mergeCommit": {
+        "oid": "78782d27c850c7e09dd3d3f1598429ad209e4c40"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOLS-xBM54EjCH",
+          "commit": {
+            "abbreviatedOid": "54862cd"
+          },
+          "author": "BashiriK",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-04-22T11:04:36Z",
+          "updatedAt": "2024-04-22T11:04:36Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
