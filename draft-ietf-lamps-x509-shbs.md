@@ -5,7 +5,7 @@ category: std
 stand_alone: true # This lets us do fancy auto-generation of references
 ipr: trust200902
 
-docname: draft-ietf-x509-shbs-latest
+docname: draft-ietf-lamps-x509-shbs-latest
 submissiontype: IETF
 v: 3
 area: sec
