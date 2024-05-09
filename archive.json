@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-05-07T01:16:22.454063+00:00",
+  "timestamp": "2024-05-09T01:15:53.011920+00:00",
   "repo": "lamps-wg/x509-shbs",
   "labels": [
     {
@@ -57,7 +57,7 @@
       "url": "https://github.com/lamps-wg/x509-shbs/issues/2",
       "state": "OPEN",
       "author": "BashiriK",
-      "authorAssociation": "CONTRIBUTOR",
+      "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "In Chapter 5 we write: \r\n\t\"CERT-KEY-USAGE\r\n      { digitalSignature, nonRepudiation, keyCertSign, cRLSign }\"\r\nWhile in Chapter 6 (\"key usage bits\") we restrict the choices for this field. \r\n",
@@ -73,7 +73,7 @@
       "url": "https://github.com/lamps-wg/x509-shbs/issues/4",
       "state": "OPEN",
       "author": "BashiriK",
-      "authorAssociation": "CONTRIBUTOR",
+      "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
@@ -117,7 +117,7 @@
             "abbreviatedOid": "53a31e0"
           },
           "author": "BashiriK",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "state": "COMMENTED",
           "body": "",
           "createdAt": "2024-02-16T09:47:18Z",
@@ -137,7 +137,7 @@
             "abbreviatedOid": "53a31e0"
           },
           "author": "BashiriK",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "state": "COMMENTED",
           "body": "",
           "createdAt": "2024-02-16T09:57:13Z",
@@ -169,7 +169,7 @@
             "abbreviatedOid": "53a31e0"
           },
           "author": "BashiriK",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "state": "APPROVED",
           "body": "",
           "createdAt": "2024-02-16T10:19:25Z",
@@ -211,7 +211,7 @@
             "abbreviatedOid": "6f8325e"
           },
           "author": "BashiriK",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "state": "APPROVED",
           "body": "",
           "createdAt": "2024-02-20T10:21:43Z",
@@ -253,7 +253,7 @@
             "abbreviatedOid": "54862cd"
           },
           "author": "BashiriK",
-          "authorAssociation": "CONTRIBUTOR",
+          "authorAssociation": "COLLABORATOR",
           "state": "APPROVED",
           "body": "",
           "createdAt": "2024-04-22T11:04:36Z",
