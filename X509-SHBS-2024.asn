@@ -1,0 +1,62 @@
+X509-SHBS-2024 -- TBD - IANA assigned module OID
+  { iso(1) identified-organization(3) dod(6) internet(1) security(5)
+    mechanisms(5) pkix(7) id-mod(0) id-mod-x509-shbs-01(TBD) }
+
+DEFINITIONS IMPLICIT TAGS ::= BEGIN
+
+EXPORTS ALL;
+
+IMPORTS
+  PUBLIC-KEY, SIGNATURE-ALGORITHM
+    FROM AlgorithmInformation-2009  -- RFC 5911 [CMSASN1]
+      { iso(1) identified-organization(3) dod(6) internet(1)
+        security(5) mechanisms(5) pkix(7) id-mod(0)
+        id-mod-algorithmInformation-02(58) } ;
+
+--
+-- Object Identifiers
+--
+
+-- id-alg-hss-lms-hashsig is defined in [RFC8708]
+
+id-alg-xmss-hashsig  OBJECT IDENTIFIER ::= {
+   TBD }
+
+id-alg-xmssmt-hashsig  OBJECT IDENTIFIER ::= {
+   TBD }
+
+--
+-- Signature Algorithms and Public Keys
+--
+
+-- sa-HSS-LMS-HashSig is defined in [RFC8708]
+
+sa-XMSS-HashSig SIGNATURE-ALGORITHM ::= {
+   IDENTIFIER id-alg-xmss-hashsig
+   PARAMS ARE absent
+   PUBLIC-KEYS { pk-XMSS-HashSig }
+   SMIME-CAPS { IDENTIFIED BY id-alg-xmss-hashsig } }
+
+sa-XMSSMT-HashSig SIGNATURE-ALGORITHM ::= {
+   IDENTIFIER id-alg-xmssmt-hashsig
+   PARAMS ARE absent
+   PUBLIC-KEYS { pk-XMSSMT-HashSig }
+   SMIME-CAPS { IDENTIFIED BY id-alg-xmssmt-hashsig } }
+
+-- pk-HSS-LMS-HashSig is defined in [RFC8708]
+
+pk-XMSS-HashSig PUBLIC-KEY ::= {
+   IDENTIFIER id-alg-xmss-hashsig
+   -- KEY no ASN.1 wrapping --
+   PARAMS ARE absent
+   CERT-KEY-USAGE
+      { digitalSignature, nonRepudiation, keyCertSign, cRLSign } }
+
+pk-XMSSMT-HashSig PUBLIC-KEY ::= {
+   IDENTIFIER id-alg-xmssmt-hashsig
+   -- KEY no ASN.1 wrapping --
+   PARAMS ARE absent
+   CERT-KEY-USAGE
+      { digitalSignature, nonRepudiation, keyCertSign, cRLSign } }
+
+END
