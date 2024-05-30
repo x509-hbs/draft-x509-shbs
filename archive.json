@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-05-28T01:18:05.975320+00:00",
+  "timestamp": "2024-05-30T01:18:41.371651+00:00",
   "repo": "lamps-wg/x509-shbs",
   "labels": [
     {
@@ -261,6 +261,32 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 6,
+      "id": "PR_kwDOLS-xBM5w5Cs2",
+      "title": "Update public key encoding",
+      "url": "https://github.com/lamps-wg/x509-shbs/pull/6",
+      "state": "OPEN",
+      "author": "danvangeest",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-05-29T14:06:39Z",
+      "updatedAt": "2024-05-29T14:06:39Z",
+      "baseRepository": "lamps-wg/x509-shbs",
+      "baseRefName": "main",
+      "baseRefOid": "9833ddc35267a649d273937383e531426a3a45e1",
+      "headRepository": "lamps-wg/x509-shbs",
+      "headRefName": "dvg/encoding",
+      "headRefOid": "8b67345086162529cfb56cffb3b2e68d3a7ef193",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
