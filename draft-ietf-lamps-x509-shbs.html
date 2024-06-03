@@ -1492,22 +1492,19 @@ on the contents and format of an XMSS^MT public key.<a href="#section-5.3-5" cla
 <a href="#section-6" class="section-number selfRef">6. </a><a href="#name-key-usage-bits" class="section-name selfRef">Key Usage Bits</a>
       </h2>
 <p id="section-6-1">The intended application for the key is indicated in the keyUsage certificate
-extension <span>[<a href="#RFC5280" class="cite xref">RFC5280</a>]</span>. If the keyUsage extension is present in a certificate that
-indicates <code>id-alg-hss-lms-hashsig</code>, <code>id-alg-xmss-hashsig</code>, or
-<code>id-alg-xmssmt-hashsig</code>, then the following requirements given in this section
-<span class="bcp14">MUST</span> be fulfilled.<a href="#section-6-1" class="pilcrow">¶</a></p>
-<p id="section-6-2">When one of these AlgorithmIdentifiers appears in the SubjectPublicKeyInfo
+extension <span>[<a href="#RFC5280" class="cite xref">RFC5280</a>]</span>.
+When one of the AlgorithmIdentifiers specified in this document appears in the SubjectPublicKeyInfo
 field of a certification authority (CA) X.509 certificate <span>[<a href="#RFC5280" class="cite xref">RFC5280</a>]</span>, the
 certificate key usage extension <span class="bcp14">MUST</span> contain at least one of the
 following values: digitalSignature, nonRepudiation, keyCertSign, or
-cRLSign. However, it <span class="bcp14">MUST NOT</span> contain other values.<a href="#section-6-2" class="pilcrow">¶</a></p>
-<p id="section-6-3">When one of these AlgorithmIdentifiers appears in the SubjectPublicKeyInfo
+cRLSign. However, it <span class="bcp14">MUST NOT</span> contain other values.<a href="#section-6-1" class="pilcrow">¶</a></p>
+<p id="section-6-2">When one of these AlgorithmIdentifiers appears in the SubjectPublicKeyInfo
 field of an end entity X.509 certificate <span>[<a href="#RFC5280" class="cite xref">RFC5280</a>]</span>, the certificate key usage
 extension <span class="bcp14">MUST</span> contain at least one of the following values: digitalSignature
-or nonRepudiation. However, it <span class="bcp14">MUST NOT</span> contain other values.<a href="#section-6-3" class="pilcrow">¶</a></p>
-<p id="section-6-4">Note that for certificates that indicate <code>id-alg-hss-lms-hashsig</code> the above
+or nonRepudiation. However, it <span class="bcp14">MUST NOT</span> contain other values.<a href="#section-6-2" class="pilcrow">¶</a></p>
+<p id="section-6-3">Note that for certificates that indicate <code>id-alg-hss-lms-hashsig</code> the above
 definitions are more restrictive than the requirement defined in Section 4 of
-<span>[<a href="#I-D.draft-ietf-lamps-rfc8708bis" class="cite xref">I-D.draft-ietf-lamps-rfc8708bis</a>]</span>.<a href="#section-6-4" class="pilcrow">¶</a></p>
+<span>[<a href="#I-D.draft-ietf-lamps-rfc8708bis" class="cite xref">I-D.draft-ietf-lamps-rfc8708bis</a>]</span>.<a href="#section-6-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="signature-algorithms">
