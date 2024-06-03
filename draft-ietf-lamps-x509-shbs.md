@@ -50,7 +50,6 @@ normative:
   RFC5280: #v3 cer, v2 crl
   RFC8391: #xmss
   RFC8554: #hsslms
-  RFC8708: #hsslms in cms
   SP800208:
     target: https://doi.org/10.6028/NIST.SP.800-208
     title: Recommendation for Stateful Hash-Based Signature Schemes
@@ -152,17 +151,6 @@ and discussed later in {{use-cases-shbs-x509}}.
 
 {::boilerplate bcp14-tagged}
 
-# Notation
-
-The parameter 'n' is the security parameter, given in bytes. In practice this
-is typically aligned to the standard output length of the hash function in use,
-i.e. either 24, 32 or 64 bytes. The height of a single tree is typically given
-by the parameter 'h'. The number of levels of trees is either called 'L' (HSS)
-or 'd' (XMSS, XMSS^MT).
-
-\[EDNOTE: Should we delete this section? The parameters are not used in this
-document.\]
-
 # Use Cases of S-HBS in X.509 {#use-cases-shbs-x509}
 
 As many cryptographic algorithms that are considered to be quantum-resistant,
@@ -201,14 +189,14 @@ where publicly trusted code signing certificates are useful.
 # Algorithm Identifiers and Parameters
 
 In this document, we define new OIDs for identifying the different stateful
-hash-based signature algorithms. An additional OID is defined in [RFC8708] and
+hash-based signature algorithms. An additional OID is defined in {{!I-D.draft-ietf-lamps-rfc8708bis}} and
 repeated here for convenience. For all of the OIDs, the parameters MUST be
 absent.
 
 ## HSS Algorithm Identifier
 
 The object identifier and public key algorithm identifier for HSS is defined in
-[RFC8708]. The definitions are repeated here for reference.
+{{!I-D.draft-ietf-lamps-rfc8708bis}}. The definitions are repeated here for reference.
 
 The object identifier for an HSS public key is `id-alg-hss-lms-hashsig`:
 
@@ -220,7 +208,7 @@ Note that the `id-alg-hss-lms-hashsig` algorithm identifier is also referred to
 as `id-alg-mts-hashsig`. This synonym is based on the terminology used in an
 early draft of the document that became [RFC8554].
 
-The public key and signature values identify the hash function used in the
+The public key and signature values identify the hash function and the height used in the
 HSS/LMS tree. [RFC8554] and [SP800208] define these values, but an IANA registry
 [IANA-LMS] permits the registration of additional identifiers in the future.
 
@@ -231,7 +219,7 @@ The object identifier for an XMSS public key is `id-alg-xmss-hashsig`:
     id-alg-xmss-hashsig  OBJECT IDENTIFIER ::= {
        TBD }
 
-The public key and signature values identify the hash function used in the
+The public key and signature values identify the hash function and the height used in the
 XMSS tree. [RFC8391] and [SP800208] define these values, but an IANA registry
 [IANA-XMSS] permits the registration of additional identifiers in the future.
 
@@ -242,7 +230,7 @@ The object identifier for an XMSS^MT public key is `id-alg-xmssmt-hashsig`:
     id-alg-xmssmt-hashsig  OBJECT IDENTIFIER ::= {
        TBD }
 
-The public key and signature values identify the hash function used in the
+The public key and signature values identify the hash function and the height used in the
 XMSS^MT tree. [RFC8391] and [SP800208] define these values, but an IANA registry
 [IANA-XMSS] permits the registration of additional identifiers in the future.
 
@@ -330,27 +318,20 @@ indicates `id-alg-hss-lms-hashsig`, `id-alg-xmss-hashsig`, or
 `id-alg-xmssmt-hashsig`, then the following requirements given in this section
 MUST be fulfilled.
 
-If the keyUsage extension is present in a code signing certificate, then it
-MUST contain at least one of the following values:
+When one of these AlgorithmIdentifiers appears in the SubjectPublicKeyInfo
+field of a certification authority (CA) X.509 certificate [RFC5280], the
+certificate key usage extension MUST contain at least one of the
+following values: digitalSignature, nonRepudiation, keyCertSign, or
+cRLSign. However, it MUST NOT contain other values.
 
-    nonRepudiation; or
-    digitalSignature.
-
-However, it MUST NOT contain other values.
-
-If the keyUsage extension is present in a certification authority certificate,
-then it MUST contain at least one of the following values:
-
-    nonRepudiation; or
-    digitalSignature; or
-    keyCertSign; or
-    cRLSign.
-
-However, it MUST NOT contain other values.
+When one of these AlgorithmIdentifiers appears in the SubjectPublicKeyInfo
+field of an end entity X.509 certificate [RFC5280], the certificate key usage
+extension MUST contain at least one of the following values: digitalSignature
+or nonRepudiation. However, it MUST NOT contain other values.
 
 Note that for certificates that indicate `id-alg-hss-lms-hashsig` the above
 definitions are more restrictive than the requirement defined in Section 4 of
-[RFC8708].
+{{!I-D.draft-ietf-lamps-rfc8708bis}}.
 
 # Signature Algorithms
 
@@ -360,12 +341,10 @@ AlgorithmIdentifier, the encoding MUST omit the parameters field. That is, the
 AlgorithmIdentifier SHALL be a SEQUENCE of one component, one of the OIDs
 defined in the following subsections.
 
-The data to be signed is prepared for signing. For the algorithms used in this
-document, the data is signed directly by the signature algorithm, the data is
-not hashed before processing. Then, a private key operation is performed to
-generate the signature value.
-
-\[EDNOTE: Should we delete the preceding paragraph?\]
+When the signature algorithm identifiers described in this document are used to
+create a signature on a message, no digest algorithm is applied to the message
+before signing.  That is, the full data to be signed is signed rather than
+a digest of the data.
 
 For HSS, the signature value is described in section 6.4 of [RFC8554]. For XMSS
 and XMSS^MT the signature values are described in sections B.2 and C.2 of
@@ -501,6 +480,6 @@ Identifier" registry for the ASN.1 module in {{sec-asn1}}.
 Thanks for Russ Housley and Panos Kampanakis for helpful suggestions.
 
 This document uses a lot of text from similar documents [SP800208],
-([RFC3279] and [RFC8410]) as well as [RFC8708]. Thanks go to the authors of
+([RFC3279] and [RFC8410]) as well as {{!I-D.draft-ietf-lamps-rfc8708bis}}. Thanks go to the authors of
 those documents. "Copying always makes things easier and less error prone" -
 [RFC8411].
