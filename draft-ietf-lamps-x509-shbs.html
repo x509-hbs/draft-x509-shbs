@@ -1034,11 +1034,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">HSS and XMSS for X.509</td>
-<td class="right">May 2024</td>
+<td class="right">June 2024</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Bashiri, et al.</td>
-<td class="center">Expires 4 November 2024</td>
+<td class="center">Expires 5 December 2024</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1051,12 +1051,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-ietf-lamps-x509-shbs-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-05-03" class="published">3 May 2024</time>
+<time datetime="2024-06-03" class="published">3 June 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-11-04">4 November 2024</time></dd>
+<dd class="expires"><time datetime="2024-12-05">5 December 2024</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1126,7 +1126,7 @@ certificates and certificate revocation lists.<a href="#section-abstract-1" clas
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 4 November 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 5 December 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1162,13 +1162,24 @@ certificates and certificate revocation lists.<a href="#section-abstract-1" clas
             <p id="section-toc.1-1.2.1" class="keepWithNext"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-conventions-and-definitions" class="internal xref">Conventions and Definitions</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3">
-            <p id="section-toc.1-1.3.1" class="keepWithNext"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-notation" class="internal xref">Notation</a></p>
+            <p id="section-toc.1-1.3.1" class="keepWithNext"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-use-cases-of-s-hbs-in-x509" class="internal xref">Use Cases of S-HBS in X.509</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-use-cases-of-s-hbs-in-x509" class="internal xref">Use Cases of S-HBS in X.509</a></p>
+            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-algorithm-identifiers-and-p" class="internal xref">Algorithm Identifiers and Parameters</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1">
+                <p id="section-toc.1-1.4.2.1.1"><a href="#section-4.1" class="auto internal xref">4.1</a>.  <a href="#name-hss-algorithm-identifier" class="internal xref">HSS Algorithm Identifier</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.2">
+                <p id="section-toc.1-1.4.2.2.1"><a href="#section-4.2" class="auto internal xref">4.2</a>.  <a href="#name-xmss-algorithm-identifier" class="internal xref">XMSS Algorithm Identifier</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.3">
+                <p id="section-toc.1-1.4.2.3.1"><a href="#section-4.3" class="auto internal xref">4.3</a>.  <a href="#name-xmssmt-algorithm-identifier" class="internal xref">XMSS^MT Algorithm Identifier</a></p>
+</li>
+            </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-public-key-algorithms" class="internal xref">Public Key Algorithms</a></p>
+            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-public-key-identifiers" class="internal xref">Public Key Identifiers</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.1">
                 <p id="section-toc.1-1.5.2.1.1"><a href="#section-5.1" class="auto internal xref">5.1</a>.  <a href="#name-hss-public-keys" class="internal xref">HSS Public Keys</a></p>
@@ -1255,7 +1266,7 @@ larger signature size and longer signing time. Due to the statefulness of the
 private key and the limited number of signatures that can be created, S-HBS
 might not be appropriate for use in interactive protocols. However, in some use
 cases the deployment of S-HBS may be appropriate. Such use cases are described
-and discussed later in <a href="#use-cases-shbs-x509" class="auto internal xref">Section 4</a>.<a href="#section-1-2" class="pilcrow">¶</a></p>
+and discussed later in <a href="#use-cases-shbs-x509" class="auto internal xref">Section 3</a>.<a href="#section-1-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="conventions-and-definitions">
@@ -1269,26 +1280,12 @@ described in BCP 14 <span>[<a href="#RFC2119" class="cite xref">RFC2119</a>]</s
 appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="notation">
-<section id="section-3">
-      <h2 id="name-notation">
-<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-notation" class="section-name selfRef">Notation</a>
-      </h2>
-<p id="section-3-1">The parameter 'n' is the security parameter, given in bytes. In practice this
-is typically aligned to the standard output length of the hash function in use,
-i.e. either 24, 32 or 64 bytes. The height of a single tree is typically given
-by the parameter 'h'. The number of levels of trees is either called 'L' (HSS)
-or 'd' (XMSS, XMSS^MT).<a href="#section-3-1" class="pilcrow">¶</a></p>
-<p id="section-3-2">[EDNOTE: Should we delete this section? The parameters are not used in this
-document.]<a href="#section-3-2" class="pilcrow">¶</a></p>
-</section>
-</div>
 <div id="use-cases-shbs-x509">
-<section id="section-4">
+<section id="section-3">
       <h2 id="name-use-cases-of-s-hbs-in-x509">
-<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-use-cases-of-s-hbs-in-x509" class="section-name selfRef">Use Cases of S-HBS in X.509</a>
+<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-use-cases-of-s-hbs-in-x509" class="section-name selfRef">Use Cases of S-HBS in X.509</a>
       </h2>
-<p id="section-4-1">As many cryptographic algorithms that are considered to be quantum-resistant,
+<p id="section-3-1">As many cryptographic algorithms that are considered to be quantum-resistant,
 S-HBS have several pros and cons regarding their practical usage. On the
 positive side they are considered to be secure against a classical as well as a
 quantum adversary, and a secure instantiation of S-HBS may always be built as
@@ -1301,74 +1298,136 @@ built.  The major negative aspect is the statefulness.  Private keys always
 have to be handled in a secure manner, S-HBS necessitate a special treatment of
 the private key in order to avoid security incidents like signature forgery
 <span>[<a href="#MCGREW" class="cite xref">MCGREW</a>]</span>, <span>[<a href="#SP800208" class="cite xref">SP800208</a>]</span>. Therefore, for S-HBS, a secure environment <span class="bcp14">MUST</span> be used
-for key generation and key management.<a href="#section-4-1" class="pilcrow">¶</a></p>
-<p id="section-4-2">Note that, in general, root CAs offer such a secure environment and the number
+for key generation and key management.<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-2">Note that, in general, root CAs offer such a secure environment and the number
 of issued signatures (including signed certificates and CRLs) is often moderate
 due to the fact that many root CAs delegate OCSP services or the signing of
 end-entity certificates to other entities (such as subordinate CAs) that use
 stateless signature schemes. Therefore, many root CAs should be able to handle
-the required state management, and S-HBS offer a viable solution.<a href="#section-4-2" class="pilcrow">¶</a></p>
-<p id="section-4-3">As the above reasoning for root CAs usually does not apply for subordinate CAs,
+the required state management, and S-HBS offer a viable solution.<a href="#section-3-2" class="pilcrow">¶</a></p>
+<p id="section-3-3">As the above reasoning for root CAs usually does not apply for subordinate CAs,
 it is <span class="bcp14">NOT RECOMMENDED</span> for subordinate CAs to use S-HBS for issuing end-entity
-certificates. Moreover, S-HBS <span class="bcp14">MUST NOT</span> be used for end-entity certificates.<a href="#section-4-3" class="pilcrow">¶</a></p>
-<p id="section-4-4">However, S-HBS <span class="bcp14">MAY</span> be used for code signing certificates, since they are
+certificates. Moreover, S-HBS <span class="bcp14">MUST NOT</span> be used for end-entity certificates.<a href="#section-3-3" class="pilcrow">¶</a></p>
+<p id="section-3-4">However, S-HBS <span class="bcp14">MAY</span> be used for code signing certificates, since they are
 suitable and recommended in such non-interactive contexts. For example, see the
 recommendations for software and firmware signing in <span>[<a href="#CNSA2.0" class="cite xref">CNSA2.0</a>]</span>. Some
 manufactures use common and well-established key formats like X.509 for their
 code signing and update mechanisms. Also there are multi-party IoT ecosystems
-where publicly trusted code signing certificates are useful.<a href="#section-4-4" class="pilcrow">¶</a></p>
+where publicly trusted code signing certificates are useful.<a href="#section-3-4" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="public-key-algorithms">
+<div id="algorithm-identifiers-and-parameters">
+<section id="section-4">
+      <h2 id="name-algorithm-identifiers-and-p">
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-algorithm-identifiers-and-p" class="section-name selfRef">Algorithm Identifiers and Parameters</a>
+      </h2>
+<p id="section-4-1">In this document, we define new OIDs for identifying the different stateful
+hash-based signature algorithms. An additional OID is defined in <span>[<a href="#I-D.draft-ietf-lamps-rfc8708bis" class="cite xref">I-D.draft-ietf-lamps-rfc8708bis</a>]</span> and
+repeated here for convenience. For all of the OIDs, the parameters <span class="bcp14">MUST</span> be
+absent.<a href="#section-4-1" class="pilcrow">¶</a></p>
+<div id="hss-algorithm-identifier">
+<section id="section-4.1">
+        <h3 id="name-hss-algorithm-identifier">
+<a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-hss-algorithm-identifier" class="section-name selfRef">HSS Algorithm Identifier</a>
+        </h3>
+<p id="section-4.1-1">The object identifier and public key algorithm identifier for HSS is defined in
+<span>[<a href="#I-D.draft-ietf-lamps-rfc8708bis" class="cite xref">I-D.draft-ietf-lamps-rfc8708bis</a>]</span>. The definitions are repeated here for reference.<a href="#section-4.1-1" class="pilcrow">¶</a></p>
+<p id="section-4.1-2">The object identifier for an HSS public key is <code>id-alg-hss-lms-hashsig</code>:<a href="#section-4.1-2" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-4.1-3">
+<pre>
+id-alg-hss-lms-hashsig  OBJECT IDENTIFIER ::= {
+   iso(1) member-body(2) us(840) rsadsi(113549) pkcs(1) pkcs9(9)
+   smime(16) alg(3) 17 }
+</pre><a href="#section-4.1-3" class="pilcrow">¶</a>
+</div>
+<p id="section-4.1-4">Note that the <code>id-alg-hss-lms-hashsig</code> algorithm identifier is also referred to
+as <code>id-alg-mts-hashsig</code>. This synonym is based on the terminology used in an
+early draft of the document that became <span>[<a href="#RFC8554" class="cite xref">RFC8554</a>]</span>.<a href="#section-4.1-4" class="pilcrow">¶</a></p>
+<p id="section-4.1-5">The public key and signature values identify the hash function and the height used in the
+HSS/LMS tree. <span>[<a href="#RFC8554" class="cite xref">RFC8554</a>]</span> and <span>[<a href="#SP800208" class="cite xref">SP800208</a>]</span> define these values, but an IANA registry
+<span>[<a href="#IANA-LMS" class="cite xref">IANA-LMS</a>]</span> permits the registration of additional identifiers in the future.<a href="#section-4.1-5" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="xmss-algorithm-identifier">
+<section id="section-4.2">
+        <h3 id="name-xmss-algorithm-identifier">
+<a href="#section-4.2" class="section-number selfRef">4.2. </a><a href="#name-xmss-algorithm-identifier" class="section-name selfRef">XMSS Algorithm Identifier</a>
+        </h3>
+<p id="section-4.2-1">The object identifier for an XMSS public key is <code>id-alg-xmss-hashsig</code>:<a href="#section-4.2-1" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-4.2-2">
+<pre>
+id-alg-xmss-hashsig  OBJECT IDENTIFIER ::= {
+   TBD }
+</pre><a href="#section-4.2-2" class="pilcrow">¶</a>
+</div>
+<p id="section-4.2-3">The public key and signature values identify the hash function and the height used in the
+XMSS tree. <span>[<a href="#RFC8391" class="cite xref">RFC8391</a>]</span> and <span>[<a href="#SP800208" class="cite xref">SP800208</a>]</span> define these values, but an IANA registry
+<span>[<a href="#IANA-XMSS" class="cite xref">IANA-XMSS</a>]</span> permits the registration of additional identifiers in the future.<a href="#section-4.2-3" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="xmssmt-algorithm-identifier">
+<section id="section-4.3">
+        <h3 id="name-xmssmt-algorithm-identifier">
+<a href="#section-4.3" class="section-number selfRef">4.3. </a><a href="#name-xmssmt-algorithm-identifier" class="section-name selfRef">XMSS^MT Algorithm Identifier</a>
+        </h3>
+<p id="section-4.3-1">The object identifier for an XMSS^MT public key is <code>id-alg-xmssmt-hashsig</code>:<a href="#section-4.3-1" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-4.3-2">
+<pre>
+id-alg-xmssmt-hashsig  OBJECT IDENTIFIER ::= {
+   TBD }
+</pre><a href="#section-4.3-2" class="pilcrow">¶</a>
+</div>
+<p id="section-4.3-3">The public key and signature values identify the hash function and the height used in the
+XMSS^MT tree. <span>[<a href="#RFC8391" class="cite xref">RFC8391</a>]</span> and <span>[<a href="#SP800208" class="cite xref">SP800208</a>]</span> define these values, but an IANA registry
+<span>[<a href="#IANA-XMSS" class="cite xref">IANA-XMSS</a>]</span> permits the registration of additional identifiers in the future.<a href="#section-4.3-3" class="pilcrow">¶</a></p>
+</section>
+</div>
+</section>
+</div>
+<div id="public-key-identifiers">
 <section id="section-5">
-      <h2 id="name-public-key-algorithms">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-public-key-algorithms" class="section-name selfRef">Public Key Algorithms</a>
+      <h2 id="name-public-key-identifiers">
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-public-key-identifiers" class="section-name selfRef">Public Key Identifiers</a>
       </h2>
 <p id="section-5-1">Certificates conforming to <span>[<a href="#RFC5280" class="cite xref">RFC5280</a>]</span> can convey a public key for any public key
 algorithm. The certificate indicates the algorithm through an algorithm
 identifier. An algorithm identifier consists of an OID and optional parameters.<a href="#section-5-1" class="pilcrow">¶</a></p>
-<p id="section-5-2">In this document, we define new OIDs for identifying the different stateful
-hash-based signature algorithms. An additional OID is defined in <span>[<a href="#RFC8708" class="cite xref">RFC8708</a>]</span> and
-repeated here for convenience. For all of the OIDs, the parameters <span class="bcp14">MUST</span> be
-absent.<a href="#section-5-2" class="pilcrow">¶</a></p>
+<p id="section-5-2"><span>[<a href="#RFC8554" class="cite xref">RFC8554</a>]</span> and <span>[<a href="#RFC8391" class="cite xref">RFC8391</a>]</span> define the raw octet string encodings of the public
+keys used in this document. When used in a SubjectPublicKeyInfo type, the
+subjectPublicKey BIT STRING contains the raw octet string encodings of the
+public keys.<a href="#section-5-2" class="pilcrow">¶</a></p>
+<p id="section-5-3">This document defines ASN.1 OCTET STRING types for encoding the public keys
+when not used in a SubjectPublicKeyInfo. The OCTET STRING is mapped to a
+subjectPublicKey (a value of type BIT STRING) as follows: the most significant
+bit of the OCTET STRING value becomes the most significant bit of the BIT
+STRING value, and so on; the least significant bit of the OCTET STRING
+becomes the least significant bit of the BIT STRING.<a href="#section-5-3" class="pilcrow">¶</a></p>
 <div id="hss-public-keys">
 <section id="section-5.1">
         <h3 id="name-hss-public-keys">
 <a href="#section-5.1" class="section-number selfRef">5.1. </a><a href="#name-hss-public-keys" class="section-name selfRef">HSS Public Keys</a>
         </h3>
-<p id="section-5.1-1">The object identifier and public key algorithm identifier for HSS is defined in
-<span>[<a href="#RFC8708" class="cite xref">RFC8708</a>]</span>. The definitions are repeated here for reference.<a href="#section-5.1-1" class="pilcrow">¶</a></p>
-<p id="section-5.1-2">The object identifier for an HSS public key is <code>id-alg-hss-lms-hashsig</code>:<a href="#section-5.1-2" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-5.1-3">
-<pre>
-id-alg-hss-lms-hashsig  OBJECT IDENTIFIER ::= {
-   iso(1) member-body(2) us(840) rsadsi(113549) pkcs(1) pkcs9(9)
-   smime(16) alg(3) 17 }
-</pre><a href="#section-5.1-3" class="pilcrow">¶</a>
-</div>
-<p id="section-5.1-4">Note that the <code>id-alg-hss-lms-hashsig</code> algorithm identifier is also referred to
-as <code>id-alg-mts-hashsig</code>. This synonym is based on the terminology used in an
-early draft of the document that became <span>[<a href="#RFC8554" class="cite xref">RFC8554</a>]</span>.<a href="#section-5.1-4" class="pilcrow">¶</a></p>
-<p id="section-5.1-5">The HSS public key identifier is as follows:<a href="#section-5.1-5" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-5.1-6">
+<p id="section-5.1-1">The HSS public key identifier is as follows:<a href="#section-5.1-1" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-5.1-2">
 <pre>
 pk-HSS-LMS-HashSig PUBLIC-KEY ::= {
    IDENTIFIER id-alg-hss-lms-hashsig
-   KEY HSS-LMS-HashSig-PublicKey
+   -- KEY no ASN.1 wrapping --
    PARAMS ARE absent
    CERT-KEY-USAGE
       { digitalSignature, nonRepudiation, keyCertSign, cRLSign } }
-</pre><a href="#section-5.1-6" class="pilcrow">¶</a>
+</pre><a href="#section-5.1-2" class="pilcrow">¶</a>
 </div>
-<p id="section-5.1-7">The HSS public key is defined as follows:<a href="#section-5.1-7" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-5.1-8">
+<p id="section-5.1-3">The HSS public key is defined as follows:<a href="#section-5.1-3" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-5.1-4">
 <pre>
 HSS-LMS-HashSig-PublicKey ::= OCTET STRING
-</pre><a href="#section-5.1-8" class="pilcrow">¶</a>
+</pre><a href="#section-5.1-4" class="pilcrow">¶</a>
 </div>
-<p id="section-5.1-9">See <span>[<a href="#SP800208" class="cite xref">SP800208</a>]</span> and <span>[<a href="#RFC8554" class="cite xref">RFC8554</a>]</span> for more information on the contents and
-format of an HSS public key. Note that the single-tree signature scheme LMS is
-instantiated as HSS with number of levels being equal to 1.<a href="#section-5.1-9" class="pilcrow">¶</a></p>
+<p id="section-5.1-5"><span>[<a href="#RFC8554" class="cite xref">RFC8554</a>]</span> defines the raw octet string encoding of an HSS public key using the
+<code>hss_public_key</code> structure. See <span>[<a href="#SP800208" class="cite xref">SP800208</a>]</span> and <span>[<a href="#RFC8554" class="cite xref">RFC8554</a>]</span> for more information on
+the contents and format of an HSS public key. Note that the single-tree signature
+scheme LMS is instantiated as HSS with number of levels being equal to 1.<a href="#section-5.1-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="xmss-public-keys">
@@ -1376,34 +1435,26 @@ instantiated as HSS with number of levels being equal to 1.<a href="#section-5.1
         <h3 id="name-xmss-public-keys">
 <a href="#section-5.2" class="section-number selfRef">5.2. </a><a href="#name-xmss-public-keys" class="section-name selfRef">XMSS Public Keys</a>
         </h3>
-<p id="section-5.2-1">The object identifier for an XMSS public key is <code>id-alg-xmss-hashsig</code>:<a href="#section-5.2-1" class="pilcrow">¶</a></p>
+<p id="section-5.2-1">The XMSS public key identifier is as follows:<a href="#section-5.2-1" class="pilcrow">¶</a></p>
 <div class="alignLeft art-text artwork" id="section-5.2-2">
-<pre>
-id-alg-xmss-hashsig  OBJECT IDENTIFIER ::= {
-   itu-t(0) identified-organization(4) etsi(0) reserved(127)
-   etsi-identified-organization(0) isara(15) algorithms(1)
-   asymmetric(1) xmss(13) 0 }
-</pre><a href="#section-5.2-2" class="pilcrow">¶</a>
-</div>
-<p id="section-5.2-3">The XMSS public key identifier is as follows:<a href="#section-5.2-3" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-5.2-4">
 <pre>
 pk-XMSS-HashSig PUBLIC-KEY ::= {
    IDENTIFIER id-alg-xmss-hashsig
-   KEY XMSS-HashSig-PublicKey
+   -- KEY no ASN.1 wrapping --
    PARAMS ARE absent
    CERT-KEY-USAGE
       { digitalSignature, nonRepudiation, keyCertSign, cRLSign } }
-</pre><a href="#section-5.2-4" class="pilcrow">¶</a>
+</pre><a href="#section-5.2-2" class="pilcrow">¶</a>
 </div>
-<p id="section-5.2-5">The XMSS public key is defined as follows:<a href="#section-5.2-5" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-5.2-6">
+<p id="section-5.2-3">The XMSS public key is defined as follows:<a href="#section-5.2-3" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-5.2-4">
 <pre>
 XMSS-HashSig-PublicKey ::= OCTET STRING
-</pre><a href="#section-5.2-6" class="pilcrow">¶</a>
+</pre><a href="#section-5.2-4" class="pilcrow">¶</a>
 </div>
-<p id="section-5.2-7">See <span>[<a href="#SP800208" class="cite xref">SP800208</a>]</span> and <span>[<a href="#RFC8391" class="cite xref">RFC8391</a>]</span> for more information on the contents and
-format of an XMSS public key.<a href="#section-5.2-7" class="pilcrow">¶</a></p>
+<p id="section-5.2-5"><span>[<a href="#RFC8391" class="cite xref">RFC8391</a>]</span> defines the raw octet string encoding of an HSS public key using the
+<code>xmss_public_key</code> structure. See <span>[<a href="#SP800208" class="cite xref">SP800208</a>]</span> and <span>[<a href="#RFC8391" class="cite xref">RFC8391</a>]</span> for more information
+on the contents and format of an XMSS public key.<a href="#section-5.2-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="xmssmt-public-keys">
@@ -1411,34 +1462,26 @@ format of an XMSS public key.<a href="#section-5.2-7" class="pilcrow">¶</a></p>
         <h3 id="name-xmssmt-public-keys">
 <a href="#section-5.3" class="section-number selfRef">5.3. </a><a href="#name-xmssmt-public-keys" class="section-name selfRef">XMSS^MT Public Keys</a>
         </h3>
-<p id="section-5.3-1">The object identifier for an XMSS^MT public key is <code>id-alg-xmssmt-hashsig</code>:<a href="#section-5.3-1" class="pilcrow">¶</a></p>
+<p id="section-5.3-1">The XMSS^MT public key identifier is as follows:<a href="#section-5.3-1" class="pilcrow">¶</a></p>
 <div class="alignLeft art-text artwork" id="section-5.3-2">
-<pre>
-id-alg-xmssmt-hashsig  OBJECT IDENTIFIER ::= {
-   itu-t(0) identified-organization(4) etsi(0) reserved(127)
-   etsi-identified-organization(0) isara(15) algorithms(1)
-   asymmetric(1) xmssmt(14) 0 }
-</pre><a href="#section-5.3-2" class="pilcrow">¶</a>
-</div>
-<p id="section-5.3-3">The XMSS^MT public key identifier is as follows:<a href="#section-5.3-3" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-5.3-4">
 <pre>
 pk-XMSSMT-HashSig PUBLIC-KEY ::= {
    IDENTIFIER id-alg-xmssmt-hashsig
-   KEY XMSSMT-HashSig-PublicKey
+   -- KEY no ASN.1 wrapping --
    PARAMS ARE absent
    CERT-KEY-USAGE
       { digitalSignature, nonRepudiation, keyCertSign, cRLSign } }
-</pre><a href="#section-5.3-4" class="pilcrow">¶</a>
+</pre><a href="#section-5.3-2" class="pilcrow">¶</a>
 </div>
-<p id="section-5.3-5">The XMSS^MT public key is defined as follows:<a href="#section-5.3-5" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-5.3-6">
+<p id="section-5.3-3">The XMSS^MT public key is defined as follows:<a href="#section-5.3-3" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-5.3-4">
 <pre>
 XMSSMT-HashSig-PublicKey ::= OCTET STRING
-</pre><a href="#section-5.3-6" class="pilcrow">¶</a>
+</pre><a href="#section-5.3-4" class="pilcrow">¶</a>
 </div>
-<p id="section-5.3-7">See <span>[<a href="#SP800208" class="cite xref">SP800208</a>]</span> and <span>[<a href="#RFC8391" class="cite xref">RFC8391</a>]</span> for more information on the contents and
-format of an XMSS^MT public key.<a href="#section-5.3-7" class="pilcrow">¶</a></p>
+<p id="section-5.3-5"><span>[<a href="#RFC8391" class="cite xref">RFC8391</a>]</span> defines the raw octet string encoding of an HSS public key using the
+<code>xmssmt_public_key</code> structure. See <span>[<a href="#SP800208" class="cite xref">SP800208</a>]</span> and <span>[<a href="#RFC8391" class="cite xref">RFC8391</a>]</span> for more information
+on the contents and format of an XMSS^MT public key.<a href="#section-5.3-5" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -1453,29 +1496,18 @@ extension <span>[<a href="#RFC5280" class="cite xref">RFC5280</a>]</span>. If th
 indicates <code>id-alg-hss-lms-hashsig</code>, <code>id-alg-xmss-hashsig</code>, or
 <code>id-alg-xmssmt-hashsig</code>, then the following requirements given in this section
 <span class="bcp14">MUST</span> be fulfilled.<a href="#section-6-1" class="pilcrow">¶</a></p>
-<p id="section-6-2">If the keyUsage extension is present in a code signing certificate, then it
-<span class="bcp14">MUST</span> contain at least one of the following values:<a href="#section-6-2" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-6-3">
-<pre>
-nonRepudiation; or
-digitalSignature.
-</pre><a href="#section-6-3" class="pilcrow">¶</a>
-</div>
-<p id="section-6-4">However, it <span class="bcp14">MUST NOT</span> contain other values.<a href="#section-6-4" class="pilcrow">¶</a></p>
-<p id="section-6-5">If the keyUsage extension is present in a certification authority certificate,
-then it <span class="bcp14">MUST</span> contain at least one of the following values:<a href="#section-6-5" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-6-6">
-<pre>
-nonRepudiation; or
-digitalSignature; or
-keyCertSign; or
-cRLSign.
-</pre><a href="#section-6-6" class="pilcrow">¶</a>
-</div>
-<p id="section-6-7">However, it <span class="bcp14">MUST NOT</span> contain other values.<a href="#section-6-7" class="pilcrow">¶</a></p>
-<p id="section-6-8">Note that for certificates that indicate <code>id-alg-hss-lms-hashsig</code> the above
+<p id="section-6-2">When one of these AlgorithmIdentifiers appears in the SubjectPublicKeyInfo
+field of a certification authority (CA) X.509 certificate <span>[<a href="#RFC5280" class="cite xref">RFC5280</a>]</span>, the
+certificate key usage extension <span class="bcp14">MUST</span> contain at least one of the
+following values: digitalSignature, nonRepudiation, keyCertSign, or
+cRLSign. However, it <span class="bcp14">MUST NOT</span> contain other values.<a href="#section-6-2" class="pilcrow">¶</a></p>
+<p id="section-6-3">When one of these AlgorithmIdentifiers appears in the SubjectPublicKeyInfo
+field of an end entity X.509 certificate <span>[<a href="#RFC5280" class="cite xref">RFC5280</a>]</span>, the certificate key usage
+extension <span class="bcp14">MUST</span> contain at least one of the following values: digitalSignature
+or nonRepudiation. However, it <span class="bcp14">MUST NOT</span> contain other values.<a href="#section-6-3" class="pilcrow">¶</a></p>
+<p id="section-6-4">Note that for certificates that indicate <code>id-alg-hss-lms-hashsig</code> the above
 definitions are more restrictive than the requirement defined in Section 4 of
-<span>[<a href="#RFC8708" class="cite xref">RFC8708</a>]</span>.<a href="#section-6-8" class="pilcrow">¶</a></p>
+<span>[<a href="#I-D.draft-ietf-lamps-rfc8708bis" class="cite xref">I-D.draft-ietf-lamps-rfc8708bis</a>]</span>.<a href="#section-6-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="signature-algorithms">
@@ -1488,17 +1520,16 @@ these algorithm identifiers appear in the algorithm field as an
 AlgorithmIdentifier, the encoding <span class="bcp14">MUST</span> omit the parameters field. That is, the
 AlgorithmIdentifier <span class="bcp14">SHALL</span> be a SEQUENCE of one component, one of the OIDs
 defined in the following subsections.<a href="#section-7-1" class="pilcrow">¶</a></p>
-<p id="section-7-2">The data to be signed is prepared for signing. For the algorithms used in this
-document, the data is signed directly by the signature algorithm, the data is
-not hashed before processing. Then, a private key operation is performed to
-generate the signature value.<a href="#section-7-2" class="pilcrow">¶</a></p>
-<p id="section-7-3">[EDNOTE: Should we delete the preceding paragraph?]<a href="#section-7-3" class="pilcrow">¶</a></p>
-<p id="section-7-4">For HSS, the signature value is described in section 6.4 of <span>[<a href="#RFC8554" class="cite xref">RFC8554</a>]</span>. For XMSS
+<p id="section-7-2">When the signature algorithm identifiers described in this document are used to
+create a signature on a message, no digest algorithm is applied to the message
+before signing.  That is, the full data to be signed is signed rather than
+a digest of the data.<a href="#section-7-2" class="pilcrow">¶</a></p>
+<p id="section-7-3">For HSS, the signature value is described in section 6.4 of <span>[<a href="#RFC8554" class="cite xref">RFC8554</a>]</span>. For XMSS
 and XMSS^MT the signature values are described in sections B.2 and C.2 of
 <span>[<a href="#RFC8391" class="cite xref">RFC8391</a>]</span>, respectively. The octet string representing the signature is encoded
 directly in the OCTET STRING without adding any additional ASN.1 wrapping. For
 the Certificate and CertificateList structures, the signature value is wrapped
-in the "signatureValue" OCTET STRING field.<a href="#section-7-4" class="pilcrow">¶</a></p>
+in the "signatureValue" OCTET STRING field.<a href="#section-7-3" class="pilcrow">¶</a></p>
 <div id="hss-signature-algorithm">
 <section id="section-7.1">
         <h3 id="name-hss-signature-algorithm">
@@ -1535,9 +1566,7 @@ processed by the XMSS signature algorithm.<a href="#section-7.2-1" class="pilcro
 <div class="alignLeft art-text artwork" id="section-7.2-2">
 <pre>
 id-alg-xmss-hashsig  OBJECT IDENTIFIER ::= {
-   itu-t(0) identified-organization(4) etsi(0) reserved(127)
-   etsi-identified-organization(0) isara(15) algorithms(1)
-   asymmetric(1) xmss(13) 0 }
+   TBD }
 </pre><a href="#section-7.2-2" class="pilcrow">¶</a>
 </div>
 <p id="section-7.2-3">The XMSS signature is defined as follows:<a href="#section-7.2-3" class="pilcrow">¶</a></p>
@@ -1563,9 +1592,7 @@ processed by the XMSS^MT signature algorithm.<a href="#section-7.3-1" class="pil
 <div class="alignLeft art-text artwork" id="section-7.3-2">
 <pre>
 id-alg-xmssmt-hashsig  OBJECT IDENTIFIER ::= {
-   itu-t(0) identified-organization(4) etsi(0) reserved(127)
-   etsi-identified-organization(0) isara(15) algorithms(1)
-   asymmetric(1) xmssmt(14) 0 }
+   TBD }
 </pre><a href="#section-7.3-2" class="pilcrow">¶</a>
 </div>
 <p id="section-7.3-3">The XMSS^MT signature is defined as follows:<a href="#section-7.3-3" class="pilcrow">¶</a></p>
@@ -1591,7 +1618,7 @@ format of an XMSS^MT signature.<a href="#section-7.3-5" class="pilcrow">¶</a></
 <span>[<a href="#SP800208" class="cite xref">SP800208</a>]</span><a href="#section-8-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="asn1-module">
+<div id="sec-asn1">
 <section id="section-9">
       <h2 id="name-asn1-module">
 <a href="#section-9" class="section-number selfRef">9. </a><a href="#name-asn1-module" class="section-name selfRef">ASN.1 Module</a>
@@ -1600,13 +1627,9 @@ format of an XMSS^MT signature.<a href="#section-7.3-5" class="pilcrow">¶</a></
 This ASN.1 Module builds upon the conventions established in <span>[<a href="#RFC5911" class="cite xref">RFC5911</a>]</span>.<a href="#section-9-1" class="pilcrow">¶</a></p>
 <div class="alignLeft art-text artwork" id="section-9-2">
 <pre>
---
--- ASN.1 Module
---
-
-&lt;CODE STARTS&gt;
-
-Hashsigs-pkix-0 -- TBD - IANA assigned module OID
+X509-SHBS-2024 -- TBD - IANA assigned module OID
+  { iso(1) identified-organization(3) dod(6) internet(1) security(5)
+    mechanisms(5) pkix(7) id-mod(0) id-mod-x509-shbs-01(TBD) }
 
 DEFINITIONS IMPLICIT TAGS ::= BEGIN
 
@@ -1614,9 +1637,15 @@ EXPORTS ALL;
 
 IMPORTS
   PUBLIC-KEY, SIGNATURE-ALGORITHM
-  FROM AlgorithmInformation-2009
-    {iso(1) identified-organization(3) dod(6) internet(1) security(5)
-    mechanisms(5) pkix(7) id-mod(0) id-mod-algorithmInformation-02(58)};
+    FROM AlgorithmInformation-2009  -- RFC 5911 [CMSASN1]
+      { iso(1) identified-organization(3) dod(6) internet(1)
+        security(5) mechanisms(5) pkix(7) id-mod(0)
+        id-mod-algorithmInformation-02(58) }
+
+  sa-HSS-LMS-HashSig, pk-HSS-LMS-HashSig
+    FROM MTS-HashSig-2013
+      { iso(1) member-body(2) us(840) rsadsi(113549) pkcs(1) pkcs9(9)
+        id-smime(16) id-mod(0) id-mod-mts-hashsig-2013(64) };
 
 --
 -- Object Identifiers
@@ -1624,31 +1653,17 @@ IMPORTS
 
 -- id-alg-hss-lms-hashsig is defined in [RFC8708]
 
-id-alg-hss-lms-hashsig OBJECT IDENTIFIER ::= { iso(1)
-   member-body(2) us(840) rsadsi(113549) pkcs(1) pkcs9(9)
-   smime(16) alg(3) 17 }
+id-alg-xmss-hashsig  OBJECT IDENTIFIER ::= {
+   TBD }
 
-id-alg-xmss-hashsig  OBJECT IDENTIFIER ::= { itu-t(0)
-   identified-organization(4) etsi(0) reserved(127)
-   etsi-identified-organization(0) isara(15) algorithms(1)
-   asymmetric(1) xmss(13) 0 }
-
-id-alg-xmssmt-hashsig  OBJECT IDENTIFIER ::= { itu-t(0)
-   identified-organization(4) etsi(0) reserved(127)
-   etsi-identified-organization(0) isara(15) algorithms(1)
-   asymmetric(1) xmssmt(14) 0 }
+id-alg-xmssmt-hashsig  OBJECT IDENTIFIER ::= {
+   TBD }
 
 --
 -- Signature Algorithms and Public Keys
 --
 
 -- sa-HSS-LMS-HashSig is defined in [RFC8708]
-
-sa-HSS-LMS-HashSig SIGNATURE-ALGORITHM ::= {
-   IDENTIFIER id-alg-hss-lms-hashsig
-   PARAMS ARE absent
-   PUBLIC-KEYS { pk-HSS-LMS-HashSig }
-   SMIME-CAPS { IDENTIFIED BY id-alg-hss-lms-hashsig } }
 
 sa-XMSS-HashSig SIGNATURE-ALGORITHM ::= {
    IDENTIFIER id-alg-xmss-hashsig
@@ -1664,36 +1679,43 @@ sa-XMSSMT-HashSig SIGNATURE-ALGORITHM ::= {
 
 -- pk-HSS-LMS-HashSig is defined in [RFC8708]
 
-pk-HSS-LMS-HashSig PUBLIC-KEY ::= {
-   IDENTIFIER id-alg-hss-lms-hashsig
-   KEY HSS-LMS-HashSig-PublicKey
-   PARAMS ARE absent
-   CERT-KEY-USAGE
-      { digitalSignature, nonRepudiation, keyCertSign, cRLSign } }
-
-HSS-LMS-HashSig-PublicKey ::= OCTET STRING
-
 pk-XMSS-HashSig PUBLIC-KEY ::= {
    IDENTIFIER id-alg-xmss-hashsig
-   KEY XMSS-HashSig-PublicKey
+   -- KEY no ASN.1 wrapping --
    PARAMS ARE absent
    CERT-KEY-USAGE
       { digitalSignature, nonRepudiation, keyCertSign, cRLSign } }
-
-XMSS-HashSig-PublicKey ::= OCTET STRING
 
 pk-XMSSMT-HashSig PUBLIC-KEY ::= {
    IDENTIFIER id-alg-xmssmt-hashsig
-   KEY XMSSMT-HashSig-PublicKey
+   -- KEY no ASN.1 wrapping --
    PARAMS ARE absent
    CERT-KEY-USAGE
       { digitalSignature, nonRepudiation, keyCertSign, cRLSign } }
 
-XMSSMT-HashSig-PublicKey ::= OCTET STRING
+--
+-- Public Key (pk-) Algorithms
+--
+PublicKeys PUBLIC-KEY ::= {
+   -- This expands PublicKeys from RFC 5912
+   pk-HSS-LMS-HashSig |
+   pk-XMSS-HashSig |
+   pk-XMSSMT-HashSig,
+   ...
+}
+
+--
+-- Signature Algorithms (sa-)
+--
+SignatureAlgs SIGNATURE-ALGORITHM ::= {
+   -- This expands SignatureAlgorithms from RFC 5912
+   sa-HSS-LMS-HashSig |
+   sa-XMSS-HashSig |
+   sa-XMSSMT-HashSig,
+   ...
+}
 
 END
-
-&lt;CODE ENDS&gt;
 </pre><a href="#section-9-2" class="pilcrow">¶</a>
 </div>
 </section>
@@ -1757,7 +1779,7 @@ described in Section 7 of <span>[<a href="#SP800208" class="cite xref">SP800208<
 <a href="#section-12" class="section-number selfRef">12. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
       </h2>
 <p id="section-12-1">IANA is requested to assign a module OID from the "SMI for PKIX Module
-Identifier" registry for the ASN.1 module in Section 6.<a href="#section-12-1" class="pilcrow">¶</a></p>
+Identifier" registry for the ASN.1 module in <a href="#sec-asn1" class="auto internal xref">Section 9</a>.<a href="#section-12-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <section id="section-13">
@@ -1770,6 +1792,10 @@ Identifier" registry for the ASN.1 module in Section 6.<a href="#section-12-1" c
 <a href="#section-13.1" class="section-number selfRef">13.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
         </h3>
 <dl class="references">
+<dt id="I-D.draft-ietf-lamps-rfc8708bis">[I-D.draft-ietf-lamps-rfc8708bis]</dt>
+        <dd>
+<span class="refAuthor">Housley, R.</span>, <span class="refTitle">"Use of the HSS/LMS Hash-Based Signature Algorithm in the Cryptographic Message Syntax (CMS)"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-lamps-rfc8708bis-00</span>, <time datetime="2024-05-30" class="refDate">30 May 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-lamps-rfc8708bis-00">https://datatracker.ietf.org/doc/html/draft-ietf-lamps-rfc8708bis-00</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="RFC2119">[RFC2119]</dt>
         <dd>
 <span class="refAuthor">Bradner, S.</span>, <span class="refTitle">"Key words for use in RFCs to Indicate Requirement Levels"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 2119</span>, <span class="seriesInfo">DOI 10.17487/RFC2119</span>, <time datetime="1997-03" class="refDate">March 1997</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a>&gt;</span>. </dd>
@@ -1793,10 +1819,6 @@ Identifier" registry for the ASN.1 module in Section 6.<a href="#section-12-1" c
 <dt id="RFC8554">[RFC8554]</dt>
         <dd>
 <span class="refAuthor">McGrew, D.</span>, <span class="refAuthor">Curcio, M.</span>, and <span class="refAuthor">S. Fluhrer</span>, <span class="refTitle">"Leighton-Micali Hash-Based Signatures"</span>, <span class="seriesInfo">RFC 8554</span>, <span class="seriesInfo">DOI 10.17487/RFC8554</span>, <time datetime="2019-04" class="refDate">April 2019</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8554">https://www.rfc-editor.org/rfc/rfc8554</a>&gt;</span>. </dd>
-<dd class="break"></dd>
-<dt id="RFC8708">[RFC8708]</dt>
-        <dd>
-<span class="refAuthor">Housley, R.</span>, <span class="refTitle">"Use of the HSS/LMS Hash-Based Signature Algorithm in the Cryptographic Message Syntax (CMS)"</span>, <span class="seriesInfo">RFC 8708</span>, <span class="seriesInfo">DOI 10.17487/RFC8708</span>, <time datetime="2020-02" class="refDate">February 2020</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8708">https://www.rfc-editor.org/rfc/rfc8708</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="SP800208">[SP800208]</dt>
       <dd>
@@ -1822,6 +1844,14 @@ Identifier" registry for the ASN.1 module in Section 6.<a href="#section-12-1" c
 <dt id="ETSI-TR-103-692">[ETSI-TR-103-692]</dt>
         <dd>
 <span class="refAuthor">European Telecommunications Standards Institute (ETSI)</span>, <span class="refTitle">"State management for stateful authentication mechanisms"</span>, <time datetime="2021-11" class="refDate">November 2021</time>, <span>&lt;<a href="https://www.etsi.org/deliver/etsi_tr/103600_103699/103692/01.01.01_60/tr_103692v010101p.pdf">https://www.etsi.org/deliver/etsi_tr/103600_103699/103692/01.01.01_60/tr_103692v010101p.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="IANA-LMS">[IANA-LMS]</dt>
+        <dd>
+<span class="refAuthor">IANA</span>, <span class="refTitle">"Leighton-Micali Signatures (LMS)"</span>, <span>n.d.</span>, <span>&lt;<a href="https://www.iana.org/assignments/leighton-micali-signatures/">https://www.iana.org/assignments/leighton-micali-signatures/</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="IANA-XMSS">[IANA-XMSS]</dt>
+        <dd>
+<span class="refAuthor">IANA</span>, <span class="refTitle">"XMSS: Extended Hash-Based Signatures"</span>, <span>n.d.</span>, <span>&lt;<a href="https://iana.org/assignments/xmss-extended-hash-based-signatures/">https://iana.org/assignments/xmss-extended-hash-based-signatures/</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="MCGREW">[MCGREW]</dt>
         <dd>
@@ -1850,7 +1880,7 @@ Identifier" registry for the ASN.1 module in Section 6.<a href="#section-12-1" c
       </h2>
 <p id="appendix-A-1">Thanks for Russ Housley and Panos Kampanakis for helpful suggestions.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
 <p id="appendix-A-2">This document uses a lot of text from similar documents <span>[<a href="#SP800208" class="cite xref">SP800208</a>]</span>,
-(<span>[<a href="#RFC3279" class="cite xref">RFC3279</a>]</span> and <span>[<a href="#RFC8410" class="cite xref">RFC8410</a>]</span>) as well as <span>[<a href="#RFC8708" class="cite xref">RFC8708</a>]</span>. Thanks go to the authors of
+(<span>[<a href="#RFC3279" class="cite xref">RFC3279</a>]</span> and <span>[<a href="#RFC8410" class="cite xref">RFC8410</a>]</span>) as well as <span>[<a href="#I-D.draft-ietf-lamps-rfc8708bis" class="cite xref">I-D.draft-ietf-lamps-rfc8708bis</a>]</span>. Thanks go to the authors of
 those documents. "Copying always makes things easier and less error prone" -
 <span>[<a href="#RFC8411" class="cite xref">RFC8411</a>]</span>.<a href="#appendix-A-2" class="pilcrow">¶</a></p>
 </section>
