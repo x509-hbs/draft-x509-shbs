@@ -313,12 +313,8 @@ on the contents and format of an XMSS^MT public key.
 # Key Usage Bits
 
 The intended application for the key is indicated in the keyUsage certificate
-extension [RFC5280]. If the keyUsage extension is present in a certificate that
-indicates `id-alg-hss-lms-hashsig`, `id-alg-xmss-hashsig`, or
-`id-alg-xmssmt-hashsig`, then the following requirements given in this section
-MUST be fulfilled.
-
-When one of these AlgorithmIdentifiers appears in the SubjectPublicKeyInfo
+extension [RFC5280].
+When one of the AlgorithmIdentifiers specified in this document appears in the SubjectPublicKeyInfo
 field of a certification authority (CA) X.509 certificate [RFC5280], the
 certificate key usage extension MUST contain at least one of the
 following values: digitalSignature, nonRepudiation, keyCertSign, or
