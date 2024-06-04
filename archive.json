@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-02T01:23:42.526701+00:00",
+  "timestamp": "2024-06-04T01:19:51.454515+00:00",
   "repo": "lamps-wg/x509-shbs",
   "labels": [
     {
@@ -55,15 +55,15 @@
       "id": "I_kwDOLS-xBM5_qbzk",
       "title": "Contradiction on CERT-KEY-USAGE demands between Chap 5 and Chap 6?",
       "url": "https://github.com/lamps-wg/x509-shbs/issues/2",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "BashiriK",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "In Chapter 5 we write: \r\n\t\"CERT-KEY-USAGE\r\n      { digitalSignature, nonRepudiation, keyCertSign, cRLSign }\"\r\nWhile in Chapter 6 (\"key usage bits\") we restrict the choices for this field. \r\n",
       "createdAt": "2024-02-19T08:47:09Z",
-      "updatedAt": "2024-02-19T08:47:09Z",
-      "closedAt": null,
+      "updatedAt": "2024-06-03T15:36:31Z",
+      "closedAt": "2024-06-03T15:36:31Z",
       "comments": []
     },
     {
@@ -71,15 +71,15 @@
       "id": "I_kwDOLS-xBM5_y19E",
       "title": "Delete two paragraphs which are mentioned as \"EDNOTE\"s",
       "url": "https://github.com/lamps-wg/x509-shbs/issues/4",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "BashiriK",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-02-20T10:21:29Z",
-      "updatedAt": "2024-02-20T10:21:29Z",
-      "closedAt": null,
+      "updatedAt": "2024-06-03T13:19:47Z",
+      "closedAt": "2024-06-03T13:19:47Z",
       "comments": []
     }
   ],
@@ -267,24 +267,26 @@
       "id": "PR_kwDOLS-xBM5w5Cs2",
       "title": "Update public key encoding",
       "url": "https://github.com/lamps-wg/x509-shbs/pull/6",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "danvangeest",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-05-29T14:06:39Z",
-      "updatedAt": "2024-05-31T10:25:56Z",
+      "updatedAt": "2024-06-03T13:08:44Z",
       "baseRepository": "lamps-wg/x509-shbs",
       "baseRefName": "main",
       "baseRefOid": "9833ddc35267a649d273937383e531426a3a45e1",
       "headRepository": "lamps-wg/x509-shbs",
       "headRefName": "dvg/encoding",
-      "headRefOid": "8b67345086162529cfb56cffb3b2e68d3a7ef193",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "b47ab615164f7e9725ff7f10e7232e9fe7d2165e",
+      "closedAt": "2024-06-03T13:08:43Z",
+      "mergedAt": "2024-06-03T13:08:43Z",
+      "mergedBy": "BashiriK",
+      "mergeCommit": {
+        "oid": "2e727d8f4b449ad66dd7c3da77a886834cb3bc72"
+      },
       "comments": [],
       "reviews": [
         {
@@ -358,6 +360,61 @@
           "body": "I only have one small comment. Besides that I totally agree with everything. ",
           "createdAt": "2024-05-31T10:25:56Z",
           "updatedAt": "2024-05-31T10:25:56Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOLS-xBM58zU2E",
+          "commit": {
+            "abbreviatedOid": "b47ab61"
+          },
+          "author": "BashiriK",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-06-03T13:08:37Z",
+          "updatedAt": "2024-06-03T13:08:37Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "id": "PR_kwDOLS-xBM5xUOQP",
+      "title": "Clarify key usage",
+      "url": "https://github.com/lamps-wg/x509-shbs/pull/7",
+      "state": "MERGED",
+      "author": "danvangeest",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-06-03T15:23:31Z",
+      "updatedAt": "2024-06-03T15:36:21Z",
+      "baseRepository": "lamps-wg/x509-shbs",
+      "baseRefName": "main",
+      "baseRefOid": "2e727d8f4b449ad66dd7c3da77a886834cb3bc72",
+      "headRepository": "lamps-wg/x509-shbs",
+      "headRefName": "dvg/keyusage",
+      "headRefOid": "1563291c600af02e1effe4072db12b7df186d66a",
+      "closedAt": "2024-06-03T15:36:21Z",
+      "mergedAt": "2024-06-03T15:36:21Z",
+      "mergedBy": "BashiriK",
+      "mergeCommit": {
+        "oid": "68cdd21cbdbeb0725bf371ea70d4299dac7113c5"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOLS-xBM5800_1",
+          "commit": {
+            "abbreviatedOid": "1563291"
+          },
+          "author": "BashiriK",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-06-03T15:36:15Z",
+          "updatedAt": "2024-06-03T15:36:15Z",
           "comments": []
         }
       ]
