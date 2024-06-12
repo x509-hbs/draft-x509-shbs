@@ -569,10 +569,9 @@ Table of Contents
 
    [I-D.draft-ietf-lamps-rfc8708bis]
               Housley, R., "Use of the HSS/LMS Hash-Based Signature
-              Algorithm in the Cryptographic Message Syntax (CMS)", Work
-              in Progress, Internet-Draft, draft-ietf-lamps-rfc8708bis-
-              01, 6 June 2024, <https://datatracker.ietf.org/doc/html/
-              draft-ietf-lamps-rfc8708bis-01>.
+              Algorithm in the Cryptographic Message Syntax (CMS)",
+              RFC 8708, DOI 10.17487/RFC8708, February 2020,
+              <https://www.rfc-editor.org/rfc/rfc8708>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
