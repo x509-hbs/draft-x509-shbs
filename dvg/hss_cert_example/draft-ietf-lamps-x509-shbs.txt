@@ -5,14 +5,14 @@
 LAMPS - Limited Additional Mechanisms for PKIX and SMIME      K. Bashiri
 Internet-Draft                                                       BSI
 Intended status: Standards Track                              S. Fluhrer
-Expires: 8 December 2024                                   Cisco Systems
+Expires: 14 December 2024                                  Cisco Systems
                                                                S. Gazdag
                                                               genua GmbH
                                                             D. Van Geest
                                                      CryptoNext Security
                                                              S. Kousidis
                                                                      BSI
-                                                             6 June 2024
+                                                            12 June 2024
 
 
 Internet X.509 Public Key Infrastructure: Algorithm Identifiers for HSS
@@ -59,7 +59,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 8 December 2024.
+   This Internet-Draft will expire on 14 December 2024.
 
 Copyright Notice
 
@@ -571,8 +571,8 @@ Table of Contents
               Housley, R., "Use of the HSS/LMS Hash-Based Signature
               Algorithm in the Cryptographic Message Syntax (CMS)", Work
               in Progress, Internet-Draft, draft-ietf-lamps-rfc8708bis-
-              00, 30 May 2024, <https://datatracker.ietf.org/doc/html/
-              draft-ietf-lamps-rfc8708bis-00>.
+              01, 6 June 2024, <https://datatracker.ietf.org/doc/html/
+              draft-ietf-lamps-rfc8708bis-01>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
