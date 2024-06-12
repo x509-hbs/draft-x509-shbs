@@ -326,8 +326,8 @@ extension MUST contain at least one of the following values: digitalSignature
 or nonRepudiation. However, it MUST NOT contain other values.
 
 Note that for certificates that indicate `id-alg-hss-lms-hashsig` the above
-definitions are more restrictive than the requirement defined in Section 4 of
-{{!I-D.draft-ietf-lamps-rfc8708bis}}.
+definitions are more restrictive than the requirement defined in {{Section 4 of
+I-D.draft-ietf-lamps-rfc8708bis}}.
 
 # Signature Algorithms
 
