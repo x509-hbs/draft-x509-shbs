@@ -46,6 +46,7 @@ author:
     email: kousidis.ietf@gmail.com
 
 normative:
+  I-D.draft-ietf-lamps-rfc8708bis: rfc8708bis
   RFC5911:
   RFC5280: #v3 cer, v2 crl
   RFC8391: #xmss
@@ -189,14 +190,14 @@ where publicly trusted code signing certificates are useful.
 # Algorithm Identifiers and Parameters
 
 In this document, we define new OIDs for identifying the different stateful
-hash-based signature algorithms. An additional OID is defined in {{!I-D.draft-ietf-lamps-rfc8708bis}} and
+hash-based signature algorithms. An additional OID is defined in {{-rfc8708bis}} and
 repeated here for convenience. For all of the OIDs, the parameters MUST be
 absent.
 
 ## HSS Algorithm Identifier
 
 The object identifier and public key algorithm identifier for HSS is defined in
-{{!I-D.draft-ietf-lamps-rfc8708bis}}. The definitions are repeated here for reference.
+{{-rfc8708bis}}. The definitions are repeated here for reference.
 
 The object identifier for an HSS public key is `id-alg-hss-lms-hashsig`:
 
@@ -327,7 +328,7 @@ or nonRepudiation. However, it MUST NOT contain other values.
 
 Note that for certificates that indicate `id-alg-hss-lms-hashsig` the above
 definitions are more restrictive than the requirement defined in {{Section 4 of
-I-D.draft-ietf-lamps-rfc8708bis}}.
+-rfc8708bis}}.
 
 # Signature Algorithms
 
@@ -628,6 +629,6 @@ gAZyEfd0q+s4IzBorUgB5HdeNOSxw+lGpJbacRIZscJ/Uw/2zUrPEujqJRuJ9jVU
 Thanks for Russ Housley and Panos Kampanakis for helpful suggestions.
 
 This document uses a lot of text from similar documents [SP800208],
-([RFC3279] and [RFC8410]) as well as {{!I-D.draft-ietf-lamps-rfc8708bis}}. Thanks go to the authors of
+([RFC3279] and [RFC8410]) as well as {{-rfc8708bis}}. Thanks go to the authors of
 those documents. "Copying always makes things easier and less error prone" -
 [RFC8411].
