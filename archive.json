@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-11T01:20:58.712499+00:00",
+  "timestamp": "2024-06-13T01:20:11.731976+00:00",
   "repo": "lamps-wg/x509-shbs",
   "labels": [
     {
@@ -431,19 +431,33 @@
       "labels": [],
       "body": "",
       "createdAt": "2024-06-06T10:27:54Z",
-      "updatedAt": "2024-06-06T10:27:54Z",
+      "updatedAt": "2024-06-12T14:12:15Z",
       "baseRepository": "lamps-wg/x509-shbs",
       "baseRefName": "main",
       "baseRefOid": "68cdd21cbdbeb0725bf371ea70d4299dac7113c5",
       "headRepository": "lamps-wg/x509-shbs",
       "headRefName": "dvg/hss_cert_example",
-      "headRefOid": "0f4ee4b04778752e63f82261a230b6e0792cb29d",
+      "headRefOid": "021004e5c9bc7a652fba57a5a437209636df3aae",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOLS-xBM599GfE",
+          "commit": {
+            "abbreviatedOid": "021004e"
+          },
+          "author": "BashiriK",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-06-12T14:12:15Z",
+          "updatedAt": "2024-06-12T14:12:15Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
