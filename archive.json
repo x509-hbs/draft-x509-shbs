@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-06-13T01:20:11.731976+00:00",
+  "timestamp": "2024-06-16T01:26:25.449589+00:00",
   "repo": "lamps-wg/x509-shbs",
   "labels": [
     {
@@ -424,24 +424,26 @@
       "id": "PR_kwDOLS-xBM5xqap8",
       "title": "Add HSS certificate example",
       "url": "https://github.com/lamps-wg/x509-shbs/pull/8",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "danvangeest",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-06-06T10:27:54Z",
-      "updatedAt": "2024-06-12T14:12:15Z",
+      "updatedAt": "2024-06-14T09:58:49Z",
       "baseRepository": "lamps-wg/x509-shbs",
       "baseRefName": "main",
       "baseRefOid": "68cdd21cbdbeb0725bf371ea70d4299dac7113c5",
       "headRepository": "lamps-wg/x509-shbs",
       "headRefName": "dvg/hss_cert_example",
       "headRefOid": "021004e5c9bc7a652fba57a5a437209636df3aae",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-06-14T09:58:49Z",
+      "mergedAt": "2024-06-14T09:58:49Z",
+      "mergedBy": "danvangeest",
+      "mergeCommit": {
+        "oid": "b021a6a583ed6204eb6b6da3c2a9fee844a36db8"
+      },
       "comments": [],
       "reviews": [
         {
